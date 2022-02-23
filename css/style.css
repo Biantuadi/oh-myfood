@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700;800&family=Shrikhand&display=swap');
 /* principale */
 
 *{
@@ -18,10 +18,6 @@ a{
     text-decoration: none;
     color: black;
 }
-
-/* h1{
-    font-family: 'Shrikhand', cursive;
-} */
 
 
 /* ******************* Header **************** */
@@ -43,7 +39,8 @@ header.header{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #e8e8e8;
+    background: #e8e8e8;
+    background: linear-gradient(0deg,#e8e8e8 90%, #000000 135%);
 }
 .header__arctile__contenu{
     display: flex;
@@ -61,7 +58,7 @@ header.header{
     margin-left: 8px;
 }
 .header__arctile__contenu__titre{
-    font-size: 25px;
+    font-size: 24px;
 }
 .header__arctile__contenu__btn{
     height: 50px;
@@ -75,4 +72,72 @@ header.header{
     font-size: 1.1em;
     padding-left: 20px;
     padding-right: 20px;
+}
+
+
+/* ************************** nav ******************************* */
+
+.nav{
+    display: flex;
+    flex-direction: column;
+    margin-left: -13px;
+}
+
+.nav__titre{
+    padding-left: 25px;
+    margin-bottom: 10px;
+}
+
+ol{
+    counter-reset: steps;
+}
+
+li{
+    list-style-type: none;
+}
+li div::before{
+    content: "" counter(steps);
+    counter-increment: steps;
+    color: white;
+    background-color: #9356dc;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: -17px;
+}
+
+.nav__contenu-links__item1__cover, .nav__contenu-links__item2__cover, .nav__contenu-links__item3__cover{
+    display: flex;
+    align-items: center;
+    height: 65px;
+    width: 280px;
+    box-shadow: 1px 2px 6px 0px rgba(0,0,0,0.50);
+    margin-bottom: 35px;
+    border-radius: 30px;
+    position: relative;
+    font-weight: 800;
+}
+.nav__contenu-links__item3__cover{
+    margin-bottom: 0;
+}
+.nav i{
+    padding-left: 28px;
+}
+.nav h4{
+    margin-left: 20px;
+}
+
+nav li div:hover{
+    background-color: hsla(267, 68%, 64%, 0.185);
+    transition: ease 0.25s;
+    cursor: pointer;
+}
+nav li div:hover i{
+    color: #9356dc;
+    transition: ease .25s;
+    cursor: pointer;
 }
