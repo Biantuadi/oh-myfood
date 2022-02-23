@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+
+/* principale */
+
+*{
+    font-family: "Raleway", sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Shrikhand', cursive;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+h1{
+    font-family: 'Shrikhand', cursive;
+}
+
+
+/* ******************* Header **************** */
+
