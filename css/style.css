@@ -19,10 +19,60 @@ a{
     color: black;
 }
 
-h1{
+/* h1{
     font-family: 'Shrikhand', cursive;
-}
+} */
 
 
 /* ******************* Header **************** */
 
+header.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header__logo{
+    padding: 30px;
+    padding-bottom: 15px;
+}
+.header__arctile{
+    display: flex;
+    flex-direction: column;
+}
+.header__arctile__localisation{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e8e8e8;
+}
+.header__arctile__contenu{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    background-color: #f7f7f7;
+    padding: 0 20px 40px 20px;
+
+}
+.header__arctile__localisation__icon{
+    margin-right: 8px;
+}
+.header__arctile__localisation__ville{
+    margin-left: 8px;
+}
+.header__arctile__contenu__titre{
+    font-size: 25px;
+}
+.header__arctile__contenu__btn{
+    height: 50px;
+    /* width: 170px; */
+    border-radius: 30px;
+    border: none;
+    color: white;
+    background: #9356dc;
+    background: linear-gradient(347deg,#9356dc 0%, #ff79da 90%);
+    box-shadow: 0px 8px 14px -4px rgba(0,0,0,0.81);
+    font-size: 1.1em;
+    padding-left: 20px;
+    padding-right: 20px;
+}
