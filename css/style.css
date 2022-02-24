@@ -22,7 +22,7 @@ a{
 
 /* ******************* Header **************** */
 
-header.header{
+.header{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -66,25 +66,40 @@ header.header{
     border: none;
     color: white;
     background: #9356dc;
-    background: linear-gradient(347deg,#9356dc 0%, #ff79da 90%);
+    background: linear-gradient(347deg,#9356dc 20%, #ff79da 93%);
     box-shadow: 0px 8px 14px -4px rgba(0,0,0,0.81);
     font-size: 1.1em;
     padding-left: 20px;
     padding-right: 20px;
 }
+.header__arctile__contenu__btn a{
+    color: white;
+}
+.header__arctile__contenu__btn:hover{
+    background-color: #0346ab;
+    transition-duration: 0.35s;
+    cursor: pointer;
+    background: #9356dc;
+    background: linear-gradient(347deg,#9356dc 0%, #ff79da 80%);
+}
 
+@media (max-width:1700px) {
+    .header__arctile{
+        width: 100%;
+    }
+}
 
 /* ************************** nav ******************************* */
 
 .nav{
     display: flex;
     flex-direction: column;
-    margin-left: -100px;
+    margin-left: -80px;
     align-items: center;
 }
 
 .nav__titre{
-    margin-left: -100px;
+    margin-left: -80px;
     margin-bottom: 10px;
     font-size: 24px;
 }
@@ -141,6 +156,18 @@ nav li div:hover i{
     color: #9356dc;
     transition: ease .25s;
     cursor: pointer;
+}
+
+@media (max-width:1700px) and (min-width:768px) {
+    ol{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: auto;
+    }
+    ol li{
+        margin: 30px;
+    }
 }
 
 
@@ -212,6 +239,25 @@ nav li div:hover i{
     align-items: center;
 }
 
+@media (max-width:1700px) and (min-width:768px){
+    .section__contenu{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: auto;
+        justify-content: center;
+    }
+    .section__contenu__item1, .section__contenu__item2,
+.section__contenu__item3, .section__contenu__item4{
+    margin: 20px;
+}
+.section img{
+    width: calc(340*1.5);
+    height: calc(140*1.5);
+}
+
+}
+
 
 /* ************************** footer ********************** */
 
@@ -249,4 +295,17 @@ footer h1{
 }
 .footer__list__links--modif{
     margin-bottom: 0;
+}
+
+@media (max-width:1700px) and (min-width:768px){
+    footer{
+        align-items: flex-start;
+    }
+    footer h1{
+        margin-left: 130px;
+    }
+    .footer__list{
+        margin-left: 130px;
+    }
+
 }

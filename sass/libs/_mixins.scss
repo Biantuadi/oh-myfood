@@ -1,0 +1,16 @@
+@mixin flex-center($direction:row) {
+    flex-direction: $direction;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin width-specific($size:50%) {
+    width: $size;
+}
+
+
+
+@mixin hover($trans-value:0.35s) {
+    transition-duration: $trans-value;
+    cursor: pointer;
+}
