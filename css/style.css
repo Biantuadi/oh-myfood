@@ -141,3 +141,103 @@ nav li div:hover i{
     transition: ease .25s;
     cursor: pointer;
 }
+
+
+/* ****************** section ********************* */
+
+.section{
+    display: flex;
+    flex-direction: column;
+    background-color: #e8e8e8;
+    margin-top: 50px;
+}
+.section h3{
+    margin: 0;
+    padding: 10px 0 3px 0;
+}
+.section i{
+    font-size: 20px;
+}
+.section__titre{
+    padding-left: 15px;
+    margin-top: 40px;
+}
+.section__contenu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section__contenu__item1__card, .section__contenu__item2__card{
+    position: relative;
+}
+
+.section__contenu__item1__card__badge, .section__contenu__item2__card__badge{
+    background-color: #99e2d0;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    padding: 5px;
+    border-radius: 5px;
+    color: hsl(165, 46%, 39%);
+    font-weight: bold;
+}
+.section img{
+    width: 340px;
+    height: 170px;
+    border-radius: 30px 30px 0 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+.section__contenu__item1, .section__contenu__item2,
+.section__contenu__item3, .section__contenu__item4{
+    background-color: white;
+    margin-bottom: 30px;
+    border-radius: 30px;
+}
+/* .section__contenu + div:hover{
+    box-shadow: 1px 2px 6px 0px rgba(0,0,0,0.50);
+    transition: ease 0.25s;
+} */
+.section__contenu__item1__footer, .section__contenu__item2__footer,
+.section__contenu__item3__footer, .section__contenu__item4__footer{
+    padding: 0 15px 15px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* ************************** footer ********************** */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0 50px 15px;
+    background-color: #4b4b4b;
+    color: #f7f7f7;
+    font-weight: bold;
+}
+
+footer h1{
+    font-family: 'Shrikhand';
+    font-size: 22px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.footer a{
+    color: #f7f7f7;
+    font-size: 17px;
+}
+
+.footer__list{
+    display: flex;
+    flex-direction: column;
+}
+.footer__list__links{
+    margin-bottom: 20px;
+}
+.footer__list__links--modif{
+    margin-bottom: 0;
+}
