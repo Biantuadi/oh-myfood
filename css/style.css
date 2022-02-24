@@ -80,11 +80,12 @@ header.header{
 .nav{
     display: flex;
     flex-direction: column;
-    margin-left: -13px;
+    margin-left: -100px;
+    align-items: center;
 }
 
 .nav__titre{
-    padding-left: 25px;
+    margin-left: -100px;
     margin-bottom: 10px;
 }
 
@@ -150,6 +151,7 @@ nav li div:hover i{
     flex-direction: column;
     background-color: #e8e8e8;
     margin-top: 50px;
+    align-items: center;
 }
 .section h3{
     margin: 0;
@@ -161,6 +163,7 @@ nav li div:hover i{
 .section__titre{
     padding-left: 15px;
     margin-top: 40px;
+    margin-left: -250px;
 }
 .section__contenu{
     display: flex;
@@ -172,7 +175,7 @@ nav li div:hover i{
 }
 
 .section__contenu__item1__card__badge, .section__contenu__item2__card__badge{
-    background-color: #99e2d0;
+    background-color: #99e2d0cc;
     position: absolute;
     right: 15px;
     top: 15px;
@@ -195,10 +198,6 @@ nav li div:hover i{
     margin-bottom: 30px;
     border-radius: 30px;
 }
-/* .section__contenu + div:hover{
-    box-shadow: 1px 2px 6px 0px rgba(0,0,0,0.50);
-    transition: ease 0.25s;
-} */
 .section__contenu__item1__footer, .section__contenu__item2__footer,
 .section__contenu__item3__footer, .section__contenu__item4__footer{
     padding: 0 15px 15px 15px;
