@@ -280,29 +280,55 @@ a{
 
 // Deuxieme site (le-delice-des-sens)
 
-// .header{
-//     @include flex(column);
-//     &__logo{
-//         @include flex(column);
-//         padding: 30px 0 20px 10px;
-//         @include align-itm;;
-//         &__img{
-//             @include size(100%,auto);
-//             @include flex;
-//         }
-//     }
-//     &__baniere{
-//         @include background;
-//         img{
-//             @include size;
-//         }
-//         z-index: -1;
-//     }
-// }
-// section{
-//     @include size($height:auto);
-//     @include flex(column);
-//     background: $extralight-gray;
-//     border-radius: 35px 35px 0 0;
-//     margin-top: -70px;
-// }
+.header-page2{
+    @include flex(column);
+    &__logo{
+        @include flex;
+        padding: 30px 0 20px 10px;
+        @include align-itm;
+        &__img{
+            @include size(100%,auto);
+            @include flex;
+            @include flex-center;
+            justify-content: center;
+        }
+    }
+    &__baniere{
+        @include background;
+        img{
+            @include size;
+        }
+        z-index: -1;
+    }
+    @media #{$desktop} {
+        .header__arctile{
+            width: 100%;
+        }
+    }
+}
+.section-page2{
+    @include size($height:auto);
+    @include flex(column);
+    @include flex-center;
+    background: $white;
+    border-radius: 35px 35px 0 0;
+    margin-top: -70px;
+    &__header{
+        @include flex;
+        justify-content: space-between;
+        width: 100%;
+        @include align-itm;
+        padding: 5px 30px 0 30px;
+
+    }
+    &__header__title{
+        font-size: 27px;
+        font-family: 'Shrikhand';
+    }
+   
+}
+@media #{$desktop} and (min-width:768px){
+    .section-page2{
+        margin-top: calc(-70px*4);
+    }
+}
