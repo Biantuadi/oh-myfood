@@ -1,3 +1,43 @@
+@use "libs/index" as *;
+
+
+/************************************ principale ********************************/
+
+*{
+    font-family: "Raleway", sans-serif;
+    box-sizing: border-box;
+}
+
 body{
-    color: wheat;
+    font-family: 'Shrikhand', cursive;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/* ******************* Header **************** */
+
+.header{
+    @include display;
+    flex-direction: column;
+    &__logo{
+        @include display;
+        padding: 30px 0 20px 10px;
+        align-items: center;
+        &__img{
+            // margin-left: 70px;
+            width: 100%;
+            @include flex;
+        }
+    }
+    &__baniere{
+        @include background;
+        img{
+            @include size;
+        }
+    }
 }
