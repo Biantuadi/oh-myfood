@@ -1,7 +1,7 @@
 @use "libs/index" as *;
 
 
-/************************************ principale ********************************/
+// /************************************ principale ********************************/
 
 *{
     font-family: "Raleway", sans-serif;
@@ -12,7 +12,6 @@ body{
     font-family: 'Shrikhand', cursive;
     margin: 0;
     padding: 0;
-    // position: relative;
 }
 
 a{
@@ -20,34 +19,290 @@ a{
     color: black;
 }
 
-/* ******************* Header **************** */
 
-.header{
-    @include display;
-    flex-direction: column;
-    &__logo{
-        @include display;
-        padding: 30px 0 20px 10px;
-        align-items: center;
-        &__img{
-            width: 100%;
-            @include flex;
-        }
-    }
-    &__baniere{
-        @include background;
-        img{
-            @include size;
-        }
-        z-index: -1;
-    }
-}
-section{
-    @include size($height:auto);
+
+
+
+.header
+{
     @include flex(column);
-    background: $extralight-gray;
-    border-radius: 35px 35px 0 0;
-    // position: absolute;
-    // top: 83%;
-    margin-top: -70px;
+    @include flex-center;
+    &__logo{
+        padding: 30px;
+        padding-bottom: 15px;
+    }
+    &__arctile{
+        @include flex(column);
+
+        &__localisation{
+            @include flex;
+            @include flex-center;
+            background: $light-gray;
+            background: linear-gradient(0deg,$light-gray 90%, #000000 135%);
+            background: $light-gray;
+            &__icon{
+                margin-right: 8px;
+            }
+            &__ville{
+                margin-left: 8px;
+            }
+        }
+        &__contenu{
+                @include flex(column);
+                @include flex-center;
+                text-align: center;
+                background-color: $extralight-gray;
+                padding: 0 20px 40px 20px;
+            &__titre{
+                font-size: 24px;
+            }
+            &__btn{
+                @extend %border-raduis;
+                @include size(auto,50px);
+                background: $color-primary;
+                background: linear-gradient(347deg,$color-primary 20%, $color-secondary 93%);
+                color: $white;
+                border: none;
+                box-shadow: 0px 8px 14px -4px rgba(0,0,0,0.81);
+                font-size: 1.1em;
+                padding-left: 20px;
+                padding-right: 20px;
+            &:hover{
+                @include hover;
+                background: $color-primary;
+                background: linear-gradient(347deg, $color-primary 0%, $color-secondary 80%);
+            }
+            }
+            a{
+                color: white;
+            }
+        }
+    }
+    @media #{$desktop} {
+        .header__arctile{
+            width: 100%;
+        }
+    }
 }
+
+// premier site (Menu)
+
+.nav{
+    @include flex(column);
+    @include margin-l;
+    @include align-itm;;
+    &__titre{
+        @include margin-l;
+        margin-bottom: 10px;
+        @include font-size;
+    }
+    ol{
+        counter-reset: steps;
+    }
+    li div::before{
+        content: "" counter(steps);
+        counter-increment: steps;
+        color: white;
+        background-color: $color-primary;
+        @include size(30px,30px);
+        border-radius: 50%;
+        @include flex;
+        @include flex-center;
+        @extend %position-abs;
+        left: -17px;
+    }
+    
+    li{
+        list-style-type: none;
+        div{
+            &:hover{
+                background-color: hsla(267, 68%, 64%, 0.185);
+                @include hover(.25s);
+                i{
+                    color: $color-primary;
+                    @include hover(.25s);
+                }
+            }
+        }
+        i{
+            padding-left: 28px;
+        }
+        h4{
+            @include margin-l(30px);
+        }
+    }
+
+    &__contenu-links__item1__cover{
+        @extend %item-nav;
+    }
+    &__contenu-links__item2__cover{
+        @extend %item-nav;
+    }
+    &__contenu-links__item3__cover{
+        @extend %item-nav;
+        margin-bottom: 0;
+    }
+
+    @media #{$desktop} and (min-width:768px) {
+        ol{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: auto;
+        }
+        ol li{
+            margin: 30px;
+        }
+    }
+}
+
+
+.section{
+    @include flex(column);
+    background-color: $light-gray;
+    margin-top: 50px;
+    @include align-itm;;
+    img{
+        @include size(340px, 170px);
+        border-radius: 30px 30px 0 0;
+        @include background;
+    }
+    h3{
+        margin: 0;
+        padding: 10px 0 3px 0;
+    }
+    i{
+        font-size: 20px;
+    }
+    &__titre{
+        padding-left: 15px;
+        margin-top: 40px;
+        @include margin-l(-250px);
+    }
+    &__contenu{
+        @include flex(column);
+        @include align-itm;;
+    }
+    &__contenu__item1,
+    &__contenu__item2,
+    &__contenu__item3,
+    &__contenu__item4{
+        @extend %section-item;
+    }
+    &__contenu__item1__footer,
+    &__contenu__item2__footer,
+    &__contenu__item3__footer,
+    &__contenu__item4__footer{
+        @extend %section-item-footer;
+    }
+    &__contenu__item1:hover,
+    &__contenu__item2:hover,
+    &__contenu__item3:hover,
+    &__contenu__item4:hover{
+        @extend %sectinon-item-hover;
+    }
+    &__contenu__item1__card,
+    &__contenu__item2__card{
+       @extend %position-rel;
+    }
+    &__contenu__item1__card__badge, 
+    &__contenu__item2__card__badge{
+       @extend %item-badge-section;
+       @extend %position-abs;
+    }
+    
+    @media #{$desktop}{
+        .section__contenu{
+            @include flex;
+            flex-wrap: wrap;
+            margin: auto;
+            justify-content: center;
+        }
+        .section__contenu__item1, 
+        .section__contenu__item2,
+        .section__contenu__item3, 
+        .section__contenu__item4{
+            margin: 20px;
+        }
+        .section img{
+            @include size(340px*1.7,140px*1.7);
+        }
+    
+    }
+    
+}
+
+
+.footer{
+    @include flex(column);
+    padding: 20px 0 50px 15px;
+    background-color: #4b4b4b;
+    color: $extralight-gray;
+    font-weight: bold;
+    @include align-itm;;
+    h1{
+        font-family: 'Shrikhand';
+        font-size: 22px;
+        margin-bottom: 0;
+        padding-bottom: 0;
+        margin-left: -250px;
+    }
+    a{
+        color: $light-gray;
+        font-size: 17px;
+    }
+    &__list{
+        @include flex(column);
+        margin-left: -150px;
+    }
+    &__list__links{
+        margin-bottom: 20px;
+
+    }
+    &__list__links--modif{
+        margin-bottom: 0;
+    }
+
+    @media (max-width:1700px) and (min-width:768px){
+        footer{
+            align-items: flex-start;
+        }
+        footer h1{
+            margin-left: 130px;
+        }
+        .footer__list{
+            margin-left: 130px;
+        }
+
+    }
+}
+
+
+// Deuxieme site (le-delice-des-sens)
+
+// .header{
+//     @include flex(column);
+//     &__logo{
+//         @include flex(column);
+//         padding: 30px 0 20px 10px;
+//         @include align-itm;;
+//         &__img{
+//             @include size(100%,auto);
+//             @include flex;
+//         }
+//     }
+//     &__baniere{
+//         @include background;
+//         img{
+//             @include size;
+//         }
+//         z-index: -1;
+//     }
+// }
+// section{
+//     @include size($height:auto);
+//     @include flex(column);
+//     background: $extralight-gray;
+//     border-radius: 35px 35px 0 0;
+//     margin-top: -70px;
+// }

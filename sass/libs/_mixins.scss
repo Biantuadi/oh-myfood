@@ -1,13 +1,27 @@
+
+
+// premier site (Menu)
+
 @mixin flex($direction:row) {
     flex-direction: $direction;
+    display: flex;
+}
+@mixin flex-center {
     justify-content: center;
     align-items: center;
-    display: flex;
+}
+@mixin align-itm {
+    align-items: center;
 }
 @mixin display {
     display: flex;
 }
-
+@mixin margin-l($value:-80px) {
+    margin-left: $value;
+}
+@mixin font-size($value:24px) {
+    font-size: $value;
+}
 @mixin background {
     background-position: center;
     background-repeat: no-repeat;
