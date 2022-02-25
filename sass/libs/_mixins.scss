@@ -1,4 +1,15 @@
 
+@mixin btn {
+    border-radius: 30px;
+    background: #9356DC;
+    background: linear-gradient(347deg,#9356DC 20%, #FF79DA 93%);
+    color: white;
+    border: none;
+    box-shadow: 0px 8px 14px -4px rgba(0,0,0,0.81);
+    font-size: 1.1em;
+    padding-left: 20px;
+    padding-right: 20px;
+}
 
 // premier site (Menu)
 

@@ -18,6 +18,9 @@ a{
     text-decoration: none;
     color: black;
 }
+li{
+    list-style: none;
+}
 
 
 
@@ -57,16 +60,8 @@ a{
                 font-size: 24px;
             }
             &__btn{
-                @extend %border-raduis;
                 @include size(auto,50px);
-                background: $color-primary;
-                background: linear-gradient(347deg,$color-primary 20%, $color-secondary 93%);
-                color: $white;
-                border: none;
-                box-shadow: 0px 8px 14px -4px rgba(0,0,0,0.81);
-                font-size: 1.1em;
-                padding-left: 20px;
-                padding-right: 20px;
+                @include btn;
             &:hover{
                 @include hover;
                 background: $color-primary;
@@ -293,12 +288,33 @@ a{
             justify-content: center;
         }
     }
-    &__baniere{
-        @include background;
-        img{
-            @include size;
+    &__baniere__img{
+        background: url(../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 300px;
+        position: relative;
+        // z-index: -1;
+        &__bande{
+            position: absolute;
+            background-color: $light-gray;
+            bottom: 0;
+            height: 55px;
+            width: 100%;
+            border-radius: 35px 35px 0 0;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            // z-index: -1;
+            padding-top: 8px;
+        &__title{
+            font-size: 27px;
+            font-family: 'Shrikhand';
         }
-        z-index: -1;
+        }
+        
     }
     @media #{$desktop} {
         .header__arctile{
@@ -307,28 +323,81 @@ a{
     }
 }
 .section-page2{
-    @include size($height:auto);
     @include flex(column);
-    @include flex-center;
-    background: $white;
-    border-radius: 35px 35px 0 0;
-    margin-top: -70px;
-    &__header{
-        @include flex;
-        justify-content: space-between;
-        width: 100%;
-        @include align-itm;
-        padding: 5px 30px 0 30px;
+    background: $light-gray;
+    // border-radius: 35px 35px 0 0;
+    // margin-top: -50px;
+    padding-top: 10px;
+    // &__header{
+    //     @include flex;
+    //     justify-content: space-between;
+    //     width: 100%;
+    //     @include align-itm;
+    //     padding: 5px 30px 0 30px;
+    //     background-color: green;
 
+    // }
+    &__titre1,
+    &__titre2,
+    &__titre3{
+        margin-top: 0;
+        margin-left: 15px;
+        border-bottom: 4px solid $color-tertiary;
+        width: 50px;
+        font-weight: normal;
     }
-    &__header__title{
-        font-size: 27px;
-        font-family: 'Shrikhand';
+    &__contenu-links{
+        @include flex(column);
+    }
+    &__contenu-links__item1,
+    &__contenu-links__item2,
+    &__contenu-links__item3{
+        background-color: $white;
+        @include size(380px,90px);
+        @extend %border-raduis;
+        @include margin-l(-22px);
+        margin-bottom: 20px;
+        box-shadow: 0px .4px 2px .3px rgba(0,0,0,0.40);
+    }
+    &__contenu-links__item1__contenu,
+    &__contenu-links__item2__contenu,
+    &__contenu-links__item3__contenu{
+        @include flex;
+        @include align-itm;
+        justify-content: space-around;
+        h3,span{
+            margin-bottom: 0;
+            @include margin-l(-30px);
+        }
+        p{
+            margin-right: -30px;
+            margin-top: 50px;
+        }
+    }
+    &__button{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 100px;
+        padding-top: 20px;
+    }
+    &__button__btn{
+        @include btn;
+        @include size(200px,50px);
+        text-align: center;
+        a{
+            color: $white;
+        }
+        &:hover{
+            @include hover;
+            background: $color-primary;
+            background: linear-gradient(347deg, $color-primary 0%, $color-secondary 80%);
+        }
     }
    
 }
-@media #{$desktop} and (min-width:768px){
-    .section-page2{
-        margin-top: calc(-70px*4);
-    }
-}
+// @media #{$desktop} and (min-width:768px){
+//     .section-page2{
+//         margin-top: calc(-70px*4);
+//     }
+// }
