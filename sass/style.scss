@@ -12,6 +12,7 @@ body{
     font-family: 'Shrikhand', cursive;
     margin: 0;
     padding: 0;
+    // position: relative;
 }
 
 a{
@@ -29,7 +30,6 @@ a{
         padding: 30px 0 20px 10px;
         align-items: center;
         &__img{
-            // margin-left: 70px;
             width: 100%;
             @include flex;
         }
@@ -39,5 +39,15 @@ a{
         img{
             @include size;
         }
+        z-index: -1;
     }
+}
+section{
+    @include size($height:auto);
+    @include flex(column);
+    background: $extralight-gray;
+    border-radius: 35px 35px 0 0;
+    // position: absolute;
+    // top: 83%;
+    margin-top: -70px;
 }

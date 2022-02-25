@@ -39,10 +39,23 @@ a {
   background-position: center;
   background-repeat: no-repeat;
   object-fit: cover;
+  z-index: -1;
 }
 .header__baniere img {
   width: 100%;
-  height: 200px;
+  height: 100%;
+}
+
+section {
+  width: 100%;
+  height: auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background: #f7f7f7;
+  border-radius: 35px 35px 0 0;
+  margin-top: -70px;
 }
 
 /*# sourceMappingURL=style.css.map */
