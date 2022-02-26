@@ -337,31 +337,10 @@ li{
     }
     &__contenu-links{
         @include flex(column);
-    }
-    &__contenu-links__item1,
-    &__contenu-links__item2,
-    &__contenu-links__item3{
-        background-color: $white;
-        @include size(340px,auto);
-        @include margin-l(-22px);
-        margin-bottom: 20px;
-        border-radius: 25px;
-        overflow: hidden;
-        cursor: pointer;
-    }
-    &__contenu-links__item1__contenu,
-    &__contenu-links__item2__contenu,
-    &__contenu-links__item3__contenu{
-        @include flex;
         h3,p{
             margin-bottom: 0;
             margin-top: 0;
             @extend %overflow-text;
-        }
-        &__description{
-            padding: 1rem;
-            white-space: nowrap;
-            overflow: hidden;
         }
         span{
             margin-left: auto;
@@ -371,26 +350,76 @@ li{
             padding-bottom: 16px;
             padding-right: 19px;
         }
+        
+        i{
+            color: $color-tertiary;
+            background-color: white;
+            padding: 6px;
+            border-radius: 50%;
+        }
+    }
+    &__contenu-links__item1{
+        @include contenu-links__item;
+    }
+    &__contenu-links__item2{
+        @include contenu-links__item;
+    }
+    &__contenu-links__item3{
+        @include contenu-links__item;
+    }
+    &__contenu-links__item1__contenu{
+        @include flex;
+        &__description{
+            @include item__description;
+        }
+        
         &__check{
-            background-color: $color-tertiary;
-            margin-right: -55px;
-            width: 55px;
-            transition: all .5s;
-            @include flex;
-            @include flex-center;
-            i{
-                color: $color-tertiary;
-                background-color: white;
-                padding: 6px;
-                border-radius: 50%;
-            }
+           @include check;
+        }
+        &__check--plat{
+            @include check;
+            width: 85px;
+            margin-right: -85px;
         }
         &:hover .section-page2__contenu-links__item1__contenu__check{
-            margin-right: 0;
-            border-radius: 0 1rem 1rem 0;
-            box-shadow: 0px .4px 2px .3px $light-gray;
+            @include item-hover;
         }
-       
+    }
+    &__contenu-links__item2__contenu{
+        @include flex;
+        &__description{
+            @include item__description;
+        }
+        &__check{
+            @include check;
+            width: 67px;
+            margin-right: -67px;
+         }
+         &__check--plat{
+            width: 76px;
+            margin-right: -76px;
+         }
+         &:hover .section-page2__contenu-links__item2__contenu__check{
+            @include item-hover;
+        }
+    }
+    &__contenu-links__item3__contenu{
+        @include flex;
+        &__description{
+            @include item__description;
+        }
+        &__check{
+            @include check;
+            width: 72px;
+            margin-right: -72px;
+        }
+        &__check--plat{
+            width: 54px;
+            margin-right: -54px;
+        }
+        &:hover .section-page2__contenu-links__item3__contenu__check{
+            @include item-hover;
+        }
     }
     &__button{
         width: 100%;
