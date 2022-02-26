@@ -325,18 +325,7 @@ li{
 .section-page2{
     @include flex(column);
     background: $light-gray;
-    // border-radius: 35px 35px 0 0;
-    // margin-top: -50px;
     padding-top: 10px;
-    // &__header{
-    //     @include flex;
-    //     justify-content: space-between;
-    //     width: 100%;
-    //     @include align-itm;
-    //     padding: 5px 30px 0 30px;
-    //     background-color: green;
-
-    // }
     &__titre1,
     &__titre2,
     &__titre3{
@@ -353,26 +342,55 @@ li{
     &__contenu-links__item2,
     &__contenu-links__item3{
         background-color: $white;
-        @include size(380px,90px);
-        @extend %border-raduis;
+        @include size(340px,auto);
         @include margin-l(-22px);
         margin-bottom: 20px;
-        box-shadow: 0px .4px 2px .3px rgba(0,0,0,0.40);
+        border-radius: 25px;
+        overflow: hidden;
+        cursor: pointer;
     }
     &__contenu-links__item1__contenu,
     &__contenu-links__item2__contenu,
     &__contenu-links__item3__contenu{
         @include flex;
-        @include align-itm;
-        justify-content: space-around;
-        h3,span{
+        h3,p{
             margin-bottom: 0;
-            @include margin-l(-30px);
+            margin-top: 0;
+            @extend %overflow-text;
         }
-        p{
-            margin-right: -30px;
-            margin-top: 50px;
+        &__description{
+            padding: 1rem;
+            white-space: nowrap;
+            overflow: hidden;
         }
+        span{
+            margin-left: auto;
+            font-weight: bold;
+            @include display;
+            align-items: flex-end;
+            padding-bottom: 16px;
+            padding-right: 19px;
+        }
+        &__check{
+            background-color: $color-tertiary;
+            margin-right: -55px;
+            width: 55px;
+            transition: all .5s;
+            @include flex;
+            @include flex-center;
+            i{
+                color: $color-tertiary;
+                background-color: white;
+                padding: 6px;
+                border-radius: 50%;
+            }
+        }
+        &:hover .section-page2__contenu-links__item1__contenu__check{
+            margin-right: 0;
+            border-radius: 0 1rem 1rem 0;
+            box-shadow: 0px .4px 2px .3px $light-gray;
+        }
+       
     }
     &__button{
         width: 100%;

@@ -1,10 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700;800&family=Shrikhand&display=swap");
-.section-page2__contenu-links__item1, .section-page2__contenu-links__item2, .section-page2__contenu-links__item3 {
-  border-radius: 30px;
-}
-
 .nav__contenu-links__item1__cover, .nav__contenu-links__item2__cover, .nav__contenu-links__item3__cover {
   display: flex;
   align-items: center;
@@ -56,6 +52,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.section-page2__contenu-links__item1__contenu h3, .section-page2__contenu-links__item1__contenu p, .section-page2__contenu-links__item2__contenu h3, .section-page2__contenu-links__item2__contenu p, .section-page2__contenu-links__item3__contenu h3, .section-page2__contenu-links__item3__contenu p {
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 * {
@@ -373,25 +374,55 @@ li {
 }
 .section-page2__contenu-links__item1, .section-page2__contenu-links__item2, .section-page2__contenu-links__item3 {
   background-color: white;
-  width: 380px;
-  height: 90px;
+  width: 340px;
+  height: auto;
   margin-left: -22px;
   margin-bottom: 20px;
-  box-shadow: 0px 0.4px 2px 0.3px rgba(0, 0, 0, 0.4);
+  border-radius: 25px;
+  overflow: hidden;
+  cursor: pointer;
 }
 .section-page2__contenu-links__item1__contenu, .section-page2__contenu-links__item2__contenu, .section-page2__contenu-links__item3__contenu {
   flex-direction: row;
   display: flex;
-  align-items: center;
-  justify-content: space-around;
 }
-.section-page2__contenu-links__item1__contenu h3, .section-page2__contenu-links__item1__contenu span, .section-page2__contenu-links__item2__contenu h3, .section-page2__contenu-links__item2__contenu span, .section-page2__contenu-links__item3__contenu h3, .section-page2__contenu-links__item3__contenu span {
+.section-page2__contenu-links__item1__contenu h3, .section-page2__contenu-links__item1__contenu p, .section-page2__contenu-links__item2__contenu h3, .section-page2__contenu-links__item2__contenu p, .section-page2__contenu-links__item3__contenu h3, .section-page2__contenu-links__item3__contenu p {
   margin-bottom: 0;
-  margin-left: -30px;
+  margin-top: 0;
 }
-.section-page2__contenu-links__item1__contenu p, .section-page2__contenu-links__item2__contenu p, .section-page2__contenu-links__item3__contenu p {
-  margin-right: -30px;
-  margin-top: 50px;
+.section-page2__contenu-links__item1__contenu__description, .section-page2__contenu-links__item2__contenu__description, .section-page2__contenu-links__item3__contenu__description {
+  padding: 1rem;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.section-page2__contenu-links__item1__contenu span, .section-page2__contenu-links__item2__contenu span, .section-page2__contenu-links__item3__contenu span {
+  margin-left: auto;
+  font-weight: bold;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 16px;
+  padding-right: 19px;
+}
+.section-page2__contenu-links__item1__contenu__check, .section-page2__contenu-links__item2__contenu__check, .section-page2__contenu-links__item3__contenu__check {
+  background-color: #99E2D0;
+  margin-right: -55px;
+  width: 55px;
+  transition: all 0.5s;
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-page2__contenu-links__item1__contenu__check i, .section-page2__contenu-links__item2__contenu__check i, .section-page2__contenu-links__item3__contenu__check i {
+  color: #99E2D0;
+  background-color: white;
+  padding: 6px;
+  border-radius: 50%;
+}
+.section-page2__contenu-links__item1__contenu:hover .section-page2__contenu-links__item1__contenu__check, .section-page2__contenu-links__item2__contenu:hover .section-page2__contenu-links__item1__contenu__check, .section-page2__contenu-links__item3__contenu:hover .section-page2__contenu-links__item1__contenu__check {
+  margin-right: 0;
+  border-radius: 0 1rem 1rem 0;
+  box-shadow: 0px 0.4px 2px 0.3px #e8e8e8;
 }
 .section-page2__button {
   width: 100%;
