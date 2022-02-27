@@ -63,9 +63,7 @@ li{
                 @include size(auto,50px);
                 @include btn;
             &:hover{
-                @include hover;
-                background: $color-primary;
-                background: linear-gradient(347deg, $color-primary 0%, $color-secondary 80%);
+                @include btn-hover;
             }
             }
             a{
@@ -185,7 +183,7 @@ li{
         cursor: pointer;
         font-size: 21.9px;
         bottom: -1px;
-        left: 19.1px;
+        left: 19.5px;
     }
     
     i.motema-vide{

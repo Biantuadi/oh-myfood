@@ -6,7 +6,7 @@
   align-items: center;
   height: 65px;
   width: 280px;
-  box-shadow: 1px 2px 6px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 1px 2px 6px 0px rgba(171, 166, 166, 0.5);
   margin-bottom: 35px;
   border-radius: 30px;
   position: relative;
@@ -128,16 +128,15 @@ li {
   background: linear-gradient(347deg, #9356DC 20%, #FF79DA 93%);
   color: white;
   border: none;
-  box-shadow: 0px 8px 14px -4px rgba(0, 0, 0, 0.81);
+  box-shadow: 0px 8px 14px -4px #f7f7f7;
   font-size: 1.1em;
   padding-left: 20px;
   padding-right: 20px;
 }
 .header__arctile__contenu__btn:hover {
-  transition-duration: 0.35s;
-  cursor: pointer;
   background: #9356DC;
   background: linear-gradient(347deg, #9356DC 0%, #FF79DA 80%);
+  cursor: pointer;
 }
 .header__arctile__contenu a {
   color: white;
@@ -248,7 +247,7 @@ li {
   cursor: pointer;
   font-size: 21.9px;
   bottom: -1px;
-  left: 19.1px;
+  left: 19.5px;
 }
 .section i.motema-vide {
   position: relative;
@@ -578,7 +577,7 @@ li {
   background: linear-gradient(347deg, #9356DC 20%, #FF79DA 93%);
   color: white;
   border: none;
-  box-shadow: 0px 8px 14px -4px rgba(0, 0, 0, 0.81);
+  box-shadow: 0px 8px 14px -4px #f7f7f7;
   font-size: 1.1em;
   padding-left: 20px;
   padding-right: 20px;
