@@ -335,6 +335,31 @@ li{
             font-size: 27px;
             font-family: 'Shrikhand';
         }
+        i{
+            font-size: 20px;
+        }
+        i.motema-hover{
+            color: $light-gray;
+            position: absolute;
+            font-size: 16.3px;
+            bottom: 1px;
+            left: 22px;
+        }
+        i.motema-hover:hover{
+            color: transparent;
+            background-image: linear-gradient(347deg,#9356dc 0%, #ff79da 80%);
+            background-clip: text;
+            transition-duration: 0.35s;
+            cursor: pointer;
+            font-size: 21.9px;
+            bottom: -1px;
+            left: 19.1px;
+        }
+        
+        i.motema-vide{
+            position: relative;
+            padding-left: 20px;
+        }
         }
         
     }
