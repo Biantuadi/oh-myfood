@@ -31,9 +31,9 @@
     margin: 20px;
 }
 %sectinon-item-hover{
-    transform: scale(1.05);
+    transform: scale(1.03);
     transition: ease 0.5s;
-    box-shadow: 2px 1px 9px 1px rgba(0,0,0,0.40);
+    box-shadow: 2px 1px 9px 1px #bdbdbd;
 }
 %item-badge-section{
     background-color: #99e2d0cc;

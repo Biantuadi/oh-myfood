@@ -213,9 +213,15 @@ li{
     &__contenu__item4__footer{
         @extend %section-item-footer;
     }
-    &__contenu__item1:hover,
-    &__contenu__item2:hover,
-    &__contenu__item3:hover,
+    &__contenu__item1:hover{
+        @extend %sectinon-item-hover;
+    }
+    &__contenu__item2:hover{
+        @extend %sectinon-item-hover;
+    }
+    &__contenu__item3:hover{
+        @extend %sectinon-item-hover;
+    }
     &__contenu__item4:hover{
         @extend %sectinon-item-hover;
     }

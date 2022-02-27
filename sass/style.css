@@ -32,9 +32,9 @@
 }
 
 .section__contenu__item1:hover, .section__contenu__item2:hover, .section__contenu__item3:hover, .section__contenu__item4:hover {
-  transform: scale(1.05);
+  transform: scale(1.03);
   transition: ease 0.5s;
-  box-shadow: 2px 1px 9px 1px rgba(0, 0, 0, 0.4);
+  box-shadow: 2px 1px 9px 1px #bdbdbd;
 }
 
 .section__contenu__item1__card__badge, .section__contenu__item2__card__badge {
