@@ -72,12 +72,11 @@ a{
     padding-left: 20px;
     padding-right: 20px;
 }
-.header__arctile__contenu__btn a{
-    color: white;
-}
+
 .header__arctile__contenu__btn:hover{
     background-color: #0346ab;
     transition-duration: 0.35s;
+    color: white;
     cursor: pointer;
     background: #9356dc;
     background: linear-gradient(347deg,#9356dc 0%, #ff79da 80%);
@@ -187,6 +186,28 @@ nav li div:hover i{
 .section i{
     font-size: 20px;
 }
+i.motema-hover{
+    color: white;
+    position: absolute;
+    font-size: 16.3px;
+    bottom: 1px;
+    left: 22px;
+}
+i.motema-hover:hover{
+    color: transparent;
+    background-image: linear-gradient(347deg,#9356dc 0%, #ff79da 80%);
+    background-clip: text;
+    transition-duration: 0.35s;
+    cursor: pointer;
+    font-size: 21.9px;
+    bottom: -1px;
+    left: 19.1px;
+}
+
+i.motema-vide{
+    position: relative;
+    padding-left: 20px;
+}
 .section__titre{
     padding-left: 15px;
     margin-top: 40px;
@@ -199,7 +220,7 @@ nav li div:hover i{
 }
 .section__contenu__item1:hover,.section__contenu__item2:hover,
 .section__contenu__item3:hover, .section__contenu__item4:hover{
-    transform: scale(1.05);
+    transform: scale(1.03);
     transition: ease 0.5s;
     box-shadow: 2px 1px 9px 1px rgba(0,0,0,0.40);
 }
