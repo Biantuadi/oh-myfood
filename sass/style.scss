@@ -180,7 +180,8 @@ li{
         color: transparent;
         background-image: linear-gradient(347deg,#9356dc 0%, #ff79da 80%);
         background-clip: text;
-        transition-duration: 0.35s;
+        -webkit-background-clip: text;
+        transition-duration: 0.2s;
         cursor: pointer;
         font-size: 21.9px;
         bottom: -1px;
@@ -348,8 +349,9 @@ li{
         i.motema-hover:hover{
             color: transparent;
             background-image: linear-gradient(347deg,#9356dc 0%, #ff79da 80%);
+            -webkit-background-clip: text;
             background-clip: text;
-            transition-duration: 0.35s;
+            transition-duration: 0.2s;
             cursor: pointer;
             font-size: 21.9px;
             bottom: -1px;
@@ -373,6 +375,7 @@ li{
     @include flex(column);
     background: $light-gray;
     padding-top: 10px;
+    @include align-itm;
     &__titre1,
     &__titre2,
     &__titre3{
@@ -472,8 +475,9 @@ li{
         width: 100%;
         display: flex;
         justify-content: center;
-        margin-bottom: 100px;
+        padding-bottom: 100px;
         padding-top: 20px;
+        background-color: $light-gray;
     }
     &__button__btn{
         @include btn;
@@ -490,8 +494,20 @@ li{
     }
    
 }
-// @media #{$desktop} and (min-width:768px){
-//     .section-page2{
-//         margin-top: calc(-70px*4);
-//     }
-// }
+@media #{$desktop} and (min-width:1314px){
+    .section-page2{
+        @include flex;
+        justify-content: space-around;
+        padding-left: 5px;
+        &__contenu-links{
+            margin-left: 15px;
+        }
+    }
+}
+@media (max-width:1314px) and (min-width:768px){
+    .section-page2{
+        @include flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+}

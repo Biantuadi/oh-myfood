@@ -243,7 +243,8 @@ li {
   color: transparent;
   background-image: linear-gradient(347deg, #9356dc 0%, #ff79da 80%);
   background-clip: text;
-  transition-duration: 0.35s;
+  -webkit-background-clip: text;
+  transition-duration: 0.2s;
   cursor: pointer;
   font-size: 21.9px;
   bottom: -1px;
@@ -383,8 +384,9 @@ li {
 .header-page2__baniere__img__bande i.motema-hover:hover {
   color: transparent;
   background-image: linear-gradient(347deg, #9356dc 0%, #ff79da 80%);
+  -webkit-background-clip: text;
   background-clip: text;
-  transition-duration: 0.35s;
+  transition-duration: 0.2s;
   cursor: pointer;
   font-size: 21.9px;
   bottom: -1px;
@@ -405,6 +407,7 @@ li {
   display: flex;
   background: #e8e8e8;
   padding-top: 10px;
+  align-items: center;
 }
 .section-page2__titre1, .section-page2__titre2, .section-page2__titre3 {
   margin-top: 0;
@@ -565,8 +568,9 @@ li {
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-bottom: 100px;
+  padding-bottom: 100px;
   padding-top: 20px;
+  background-color: #e8e8e8;
 }
 .section-page2__button__btn {
   border-radius: 30px;
@@ -590,6 +594,26 @@ li {
   cursor: pointer;
   background: #9356DC;
   background: linear-gradient(347deg, #9356DC 0%, #FF79DA 80%);
+}
+
+@media only screen and (max-width:1800px) and (min-width: 1314px) {
+  .section-page2 {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 5px;
+  }
+  .section-page2__contenu-links {
+    margin-left: 15px;
+  }
+}
+@media (max-width: 1314px) and (min-width: 768px) {
+  .section-page2 {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
