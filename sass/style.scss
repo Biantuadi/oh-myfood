@@ -400,6 +400,9 @@ li{
     &__contenu-links__item3{
         @include contenu-links__item;
     }
+    &__contenu-links__item4{
+        @include contenu-links__item;
+    }
     &__contenu-links__item1__contenu{
         @include flex;
         &__description{
@@ -451,6 +454,24 @@ li{
             margin-right: -54px;
         }
         &:hover .section-page2__contenu-links__item3__contenu__check{
+            @include item-hover;
+        }
+    }
+    &__contenu-links__item4__contenu{
+        @include flex;
+        &__description{
+            @include item__description;
+        }
+        &__check{
+            @include check;
+            width: 72px;
+            margin-right: -72px;
+        }
+        &__check--plat{
+            width: 54px;
+            margin-right: -54px;
+        }
+        &:hover .section-page2__contenu-links__item4__contenu__check{
             @include item-hover;
         }
     }

@@ -495,6 +495,16 @@ li {
   overflow: hidden;
   cursor: pointer;
 }
+.section-page2__contenu-links__item4 {
+  background-color: white;
+  width: 340px;
+  height: auto;
+  margin-left: -22px;
+  margin-bottom: 20px;
+  border-radius: 25px;
+  overflow: hidden;
+  cursor: pointer;
+}
 .section-page2__contenu-links__item1__contenu {
   flex-direction: row;
   display: flex;
@@ -587,6 +597,36 @@ li {
   margin-right: -54px;
 }
 .section-page2__contenu-links__item3__contenu:hover .section-page2__contenu-links__item3__contenu__check {
+  margin-right: 0;
+  border-radius: 0 1rem 1rem 0;
+  box-shadow: 0px 0.4px 2px 0.3px #e8e8e8;
+}
+.section-page2__contenu-links__item4__contenu {
+  flex-direction: row;
+  display: flex;
+}
+.section-page2__contenu-links__item4__contenu__description {
+  padding: 1rem;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.section-page2__contenu-links__item4__contenu__check {
+  background-color: #99E2D0;
+  margin-right: -55px;
+  width: 55px;
+  transition: all 0.5s;
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 72px;
+  margin-right: -72px;
+}
+.section-page2__contenu-links__item4__contenu__check--plat {
+  width: 54px;
+  margin-right: -54px;
+}
+.section-page2__contenu-links__item4__contenu:hover .section-page2__contenu-links__item4__contenu__check {
   margin-right: 0;
   border-radius: 0 1rem 1rem 0;
   box-shadow: 0px 0.4px 2px 0.3px #e8e8e8;
