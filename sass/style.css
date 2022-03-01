@@ -14,30 +14,6 @@
   font-weight: 800;
 }
 
-.section__contenu__item1__card, .section__contenu__item2__card {
-  position: relative;
-}
-
-.nav li div::before, .section__contenu__item1__card__badge, .section__contenu__item2__card__badge {
-  position: absolute;
-}
-
-.section__contenu__item1, .section__contenu__item2, .section__contenu__item3, .section__contenu__item4 {
-  background-color: white;
-  margin-bottom: 30px;
-  border-radius: 30px;
-}
-
-.section__contenu__item1, .section__contenu__item2, .section__contenu__item3, .section__contenu__item4 {
-  margin: 20px;
-}
-
-.section__contenu__item1:hover, .section__contenu__item2:hover, .section__contenu__item3:hover, .section__contenu__item4:hover {
-  transform: scale(1.03);
-  transition: ease 0.5s;
-  box-shadow: 2px 1px 9px 1px #bdbdbd;
-}
-
 .section__contenu__item1__card__badge, .section__contenu__item2__card__badge {
   background-color: #99e2d0cc;
   right: 15px;
@@ -46,6 +22,11 @@
   border-radius: 5px;
   color: #36917a;
   font-weight: bold;
+}
+
+.section__contenu__item1:hover, .section__contenu__item2:hover, .section__contenu__item3:hover, .section__contenu__item4:hover {
+  transform: scale(1.05);
+  box-shadow: 2px 1px 9px 1px #bdbdbd;
 }
 
 .section__contenu__item1__footer, .section__contenu__item2__footer, .section__contenu__item3__footer, .section__contenu__item4__footer {
@@ -133,9 +114,13 @@ li {
   font-size: 1.1em;
   padding-left: 20px;
   padding-right: 20px;
-  padding: 14px;
+  transition: transform 0.4s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .header__arctile__contenu__btn:hover {
+  transform: scale(1.05);
   background: #9356DC;
   background: linear-gradient(347deg, #9356DC 0%, #FF79DA 80%);
   cursor: pointer;
@@ -175,6 +160,7 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: absolute;
   left: -17px;
 }
 .nav li {
@@ -239,17 +225,17 @@ li {
   font-size: 16.3px;
   bottom: 1px;
   left: 22px;
+  transition: 0.17s ease-in;
 }
 .section i.motema-hover:hover {
   color: transparent;
   background-image: linear-gradient(347deg, #9356dc 0%, #ff79da 80%);
   background-clip: text;
   -webkit-background-clip: text;
-  transition-duration: 0.2s;
   cursor: pointer;
-  font-size: 21.9px;
-  bottom: -1px;
-  left: 19.5px;
+  bottom: 1px;
+  left: 22px;
+  transform: scale(1.39);
 }
 .section i.motema-vide {
   position: relative;
@@ -264,6 +250,18 @@ li {
   flex-direction: column;
   display: flex;
   align-items: center;
+}
+.section__contenu__item1, .section__contenu__item2, .section__contenu__item3, .section__contenu__item4 {
+  background-color: white;
+  margin-bottom: 30px;
+  border-radius: 30px;
+  transition: transform 0.4s ease-in-out;
+}
+.section__contenu__item1__card, .section__contenu__item2__card {
+  position: relative;
+}
+.section__contenu__item1__card__badge, .section__contenu__item2__card__badge {
+  position: absolute;
 }
 @media only screen and (max-width:2000px) {
   .section .section__contenu {
@@ -355,8 +353,8 @@ li {
   position: absolute;
   background-color: #e8e8e8;
   bottom: 0;
-  height: 55px;
   width: 100%;
+  height: 55px;
   border-radius: 35px 35px 0 0;
   display: flex;
   justify-content: space-around;
@@ -371,22 +369,26 @@ li {
   font-size: 20px;
 }
 .header-page2__baniere__img__bande i.motema-hover {
-  color: #e8e8e8;
+  color: white;
   position: absolute;
   font-size: 16.3px;
   bottom: 1px;
   left: 22px;
+  transition: 0.17s ease-in;
+  color: #e8e8e8;
 }
 .header-page2__baniere__img__bande i.motema-hover:hover {
   color: transparent;
   background-image: linear-gradient(347deg, #9356dc 0%, #ff79da 80%);
-  -webkit-background-clip: text;
   background-clip: text;
-  transition-duration: 0.2s;
+  -webkit-background-clip: text;
   cursor: pointer;
-  font-size: 21.9px;
-  bottom: -1px;
-  left: 19.1px;
+  bottom: 1px;
+  left: 22px;
+  transform: scale(1.39);
+  bottom: 1.3px;
+  transform: scale(1.4);
+  left: 22.5px;
 }
 .header-page2__baniere__img__bande i.motema-vide {
   position: relative;
@@ -399,6 +401,7 @@ li {
   background-repeat: no-repeat;
   width: 100%;
   height: 300px;
+  position: relative;
 }
 .header-page2__baniere__img--la-française {
   background: url(../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
@@ -407,6 +410,7 @@ li {
   background-repeat: no-repeat;
   width: 100%;
   height: 300px;
+  position: relative;
 }
 .header-page2__baniere__img--le-delice {
   background: url(../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
@@ -415,6 +419,7 @@ li {
   background-repeat: no-repeat;
   width: 100%;
   height: 300px;
+  position: relative;
 }
 @media only screen and (max-width:2000px) {
   .header-page2 .header__arctile {
@@ -448,6 +453,7 @@ li {
 .section-page2__contenu-links span {
   margin-left: auto;
   font-weight: bold;
+  flex-direction: row;
   display: flex;
   align-items: flex-end;
   padding-bottom: 16px;
@@ -589,7 +595,7 @@ li {
   width: 100%;
   display: flex;
   justify-content: center;
-  padding-bottom: 100px;
+  padding-bottom: 80px;
   padding-top: 20px;
   background-color: #e8e8e8;
 }
@@ -603,19 +609,19 @@ li {
   font-size: 1.1em;
   padding-left: 20px;
   padding-right: 20px;
+  transition: transform 0.4s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 200px;
   height: 50px;
-  text-align: center;
   margin-left: 32px;
 }
-.section-page2__button__btn a {
-  color: white;
-}
 .section-page2__button__btn:hover {
-  transition-duration: 0.35s;
-  cursor: pointer;
+  transform: scale(1.05);
   background: #9356DC;
   background: linear-gradient(347deg, #9356DC 0%, #FF79DA 80%);
+  cursor: pointer;
 }
 
 @media only screen and (max-width:2000px) and (min-width: 1314px) {

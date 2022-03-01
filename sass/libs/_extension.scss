@@ -1,9 +1,6 @@
 
 // premier site (Menu)
 
-%border-raduis{
-    border-radius: 30px;
-}
 %item-nav{
     display: flex;
     align-items: center;
@@ -15,26 +12,8 @@
     position: relative;
     font-weight: 800;
 }
-%position-rel{
-    position: relative;
-}
-%position-abs{
-    position: absolute;
-}
 
-%section-item{
-    background-color: white;
-    margin-bottom: 30px;
-    border-radius: 30px;
-}
-%section-item{
-    margin: 20px;
-}
-%sectinon-item-hover{
-    transform: scale(1.03);
-    transition: ease 0.5s;
-    box-shadow: 2px 1px 9px 1px #bdbdbd;
-}
+
 %item-badge-section{
     background-color: #99e2d0cc;
     right: 15px;
@@ -44,6 +23,12 @@
     color: hsl(165, 46%, 39%);
     font-weight: bold;
 }
+
+%sectinon-item-hover{
+    transform: scale(1.05);
+    box-shadow: 2px 1px 9px 1px #bdbdbd;
+}
+
 %section-item-footer{
     padding: 0 15px 15px 15px;
     display: flex;
