@@ -61,6 +61,14 @@ li {
   list-style: none;
 }
 
+@keyframes quarter {
+  0% {
+    transform: rotate(-270deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
 .header {
   flex-direction: column;
   display: flex;
