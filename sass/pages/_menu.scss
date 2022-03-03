@@ -1,0 +1,54 @@
+@use "../utils/index" as *;
+
+.header
+{
+    @include flex(column);
+    @include flex-center;
+    &__logo{
+        padding: 30px;
+        padding-bottom: 15px;
+    }
+    &__arctile{
+        @include flex(column);
+
+        &__localisation{
+            @include flex;
+            @include flex-center;
+            background: $light-gray;
+            background: linear-gradient(0deg,$light-gray 90%, #000000 135%);
+            background: $light-gray;
+            &__icon{
+                margin-right: 8px;
+            }
+            &__ville{
+                margin-left: 8px;
+            }
+        }
+        &__contenu{
+                @include flex(column);
+                @include flex-center;
+                text-align: center;
+                background-color: $extralight-gray;
+                padding: 0 20px 40px 20px;
+            &__titre{
+                font-size: 24px;
+            }
+            &__btn{
+                @include size(auto,50px);
+                @include btn;
+                // padding: 14px;
+            &:hover{
+                @include btn-hover;
+            }
+            }
+            a{
+                color: white;
+            }
+        }
+    }
+        // @media #{$desktop} {
+        //     .header__arctile{
+        //         width: 100%;
+        //     }
+        // }
+}

@@ -1,18 +1,92 @@
-/* Error: Can't find stylesheet to import.
- *   ,
- * 2 | @forward "fonts";
- *   | ^^^^^^^^^^^^^^^^
- *   '
- *   sass\libs\_index.scss 2:1  @use
- *   sass\style.scss 1:1        root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 2 \2502  @forward \"fonts\";\d\a   \2502  ^^^^^^^^^^^^^^^^\a   \2575 \a   sass\\libs\\_index.scss 2:1  @use\a   sass\\style.scss 1:1        root stylesheet";
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700;800&family=Shrikhand&display=swap");
+* {
+  font-family: "Raleway", sans-serif;
+  box-sizing: border-box;
 }
+
+body {
+  font-family: "Shrikhand", cursive;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+li {
+  list-style: none;
+}
+
+.header {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__logo {
+  padding: 30px;
+  padding-bottom: 15px;
+}
+.header__arctile {
+  flex-direction: column;
+  display: flex;
+}
+.header__arctile__localisation {
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #e8e8e8;
+  background: linear-gradient(0deg, #e8e8e8 90%, #000000 135%);
+  background: #e8e8e8;
+}
+.header__arctile__localisation__icon {
+  margin-right: 8px;
+}
+.header__arctile__localisation__ville {
+  margin-left: 8px;
+}
+.header__arctile__contenu {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #f7f7f7;
+  padding: 0 20px 40px 20px;
+}
+.header__arctile__contenu__titre {
+  font-size: 24px;
+}
+.header__arctile__contenu__btn {
+  width: auto;
+  height: 50px;
+  border-radius: 30px;
+  background: #9356DC;
+  background: linear-gradient(347deg, #9356DC 20%, #FF79DA 93%);
+  color: white;
+  border: none;
+  box-shadow: 1px 2px 14px -4px #867e7e;
+  font-size: 1.1em;
+  padding-left: 20px;
+  padding-right: 20px;
+  transition: transform 0.4s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header__arctile__contenu__btn:hover {
+  transform: scale(1.05);
+  background: #9356DC;
+  background: linear-gradient(347deg, #9356DC 0%, #FF79DA 80%);
+  cursor: pointer;
+}
+.header__arctile__contenu a {
+  color: white;
+}
+
+/*# sourceMappingURL=style.css.map */
