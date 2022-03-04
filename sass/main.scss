@@ -1,6 +1,7 @@
 // base
 @use "base/index" as *;
 // components
+@use "components/index" as *;
 // layout
 // pages
 @use "pages/index" as *;
@@ -153,15 +154,15 @@
 //     i{
 //         font-size: 20px;
 //     }
-//     i.motema-hover{
+//     i.full-heart{
 //         @include motema-hov;
 //     }
-//     i.motema-hover:hover{
-//         @include motema-hover;
+//     i.full-heart:hover{
+//         @include full-heart;
 //     }
     
-//     i.motema-vide{
-//         @include motema-vide;
+//     i.empty-heart{
+//         @include empty-heart;
 //     }
 //     &__titre{
 //         padding-left: 15px;
@@ -228,43 +229,7 @@
 // }
 
 
-// .footer{
-//     @include flex(column);
-//     padding: 20px 0 50px 15px;
-//     background-color: #4b4b4b;
-//     color: $extralight-gray;
-//     font-weight: bold;
-//     h1{
-//         font-family: 'Shrikhand';
-//         font-size: 22px;
-//         margin-bottom: 0;
-//         padding-bottom: 0;
-//     }
-//     a{
-//         color: $light-gray;
-//         font-size: 17px;
-//     }
-//     &__list{
-//         @include flex(column);
-//     }
-//     &__list__links{
-//         margin-bottom: 20px;
 
-//     }
-//     &__list__links--modif{
-//         margin-bottom: 0;
-//     }
-
-//     @media (max-width:1700px) and (min-width:768px){
-//         footer h1{
-//             margin-left: 64px;
-//         }
-//         .footer__list{
-//             margin-left: 51px;
-//         }
-
-//     }
-// }
 
 
 // // Deuxieme site (le-delice-des-sens)
@@ -303,19 +268,19 @@
 //         i{
 //             font-size: 20px;
 //         }
-//         i.motema-hover{
+//         i.full-heart{
 //             @include motema-hov;
 //             color: $light-gray;
 //         }
-//         i.motema-hover:hover{
-//             @include motema-hover;
+//         i.full-heart:hover{
+//             @include full-heart;
 //             bottom: 1.3px;
 //             transform: scale(1.4);
 //             left: 22.5px;
 //         }
         
-//         i.motema-vide{
-//             @include motema-vide;
+//         i.empty-heart{
+//             @include empty-heart;
 //         }
 //         }
         

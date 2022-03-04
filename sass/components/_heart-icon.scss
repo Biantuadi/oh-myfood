@@ -1,0 +1,25 @@
+@use "../utils/index" as *;
+
+i.empty-heart {
+    position: relative;
+    padding-left: 20px;
+}
+
+i.full-heart {
+    color: white;
+    position: absolute;
+    font-size: 16.3px;
+    bottom: 1px;
+    left: 22px;
+    transition: .17s ease-in;
+    &:hover{
+        color: transparent;
+        background-image: linear-gradient(347deg,#9356dc 0%, #ff79da 80%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        cursor: pointer;
+        bottom: 1px;
+        left: 22px;
+        transform: scale(1.39);
+    }
+}
