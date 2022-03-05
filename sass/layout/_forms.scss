@@ -1,6 +1,6 @@
 @use "../utils/index" as *;
 
-.section-page2{
+.main{
     @include flex(column);
     background: $light-gray;
     padding-top: 10px;
@@ -48,78 +48,6 @@
     }
     &__contenu-links__item4{
         @include contenu-links__item;
-    }
-    &__contenu-links__item1__contenu{
-        @include flex;
-        &__description{
-            @include item__description;
-        }
-        
-        &__check{
-           @include check;
-        }
-        &__check--plat{
-            @include check;
-            width: 85px;
-            margin-right: -85px;
-        }
-        &:hover .section-page2__contenu-links__item1__contenu__check{
-            @include item-hover;
-        }
-    }
-    &__contenu-links__item2__contenu{
-        @include flex;
-        &__description{
-            @include item__description;
-        }
-        &__check{
-            @include check;
-            width: 67px;
-            margin-right: -67px;
-         }
-         &__check--plat{
-            width: 76px;
-            margin-right: -76px;
-         }
-         &:hover .section-page2__contenu-links__item2__contenu__check{
-            @include item-hover;
-        }
-    }
-    &__contenu-links__item3__contenu{
-        @include flex;
-        &__description{
-            @include item__description;
-        }
-        &__check{
-            @include check;
-            width: 72px;
-            margin-right: -72px;
-        }
-        &__check--plat{
-            width: 54px;
-            margin-right: -54px;
-        }
-        &:hover .section-page2__contenu-links__item3__contenu__check{
-            @include item-hover;
-        }
-    }
-    &__contenu-links__item4__contenu{
-        @include flex;
-        &__description{
-            @include item__description;
-        }
-        &__check{
-            @include check;
-            width: 72px;
-            margin-right: -72px;
-        }
-        &__check--plat{
-            width: 54px;
-            margin-right: -54px;
-        }
-        &:hover .section-page2__contenu-links__item4__contenu__check{
-            @include item-hover;
-        }
     }
     &__button{
         width: 100%;

@@ -407,29 +407,29 @@ footer h1{
     }
   }
   
-  .section-page2 {
+  .main {
     flex-direction: column;
     display: flex;
     background: #e8e8e8;
     padding-top: 10px;
     align-items: center;
   }
-  .section-page2__titre1, .section-page2__titre2, .section-page2__titre3 {
+  .main__titre1, .main__titre2, .main__titre3 {
     margin-top: 0;
     margin-left: 15px;
     border-bottom: 4px solid #99E2D0;
     width: 50px;
     font-weight: normal;
   }
-  .section-page2__contenu-links {
+  .main__contenu-links {
     flex-direction: column;
     display: flex;
   }
-  .section-page2__contenu-links h3, .section-page2__contenu-links p {
+  .main__contenu-links h3, .main__contenu-links p {
     margin-bottom: 0;
     margin-top: 0;
   }
-  .section-page2__contenu-links span {
+  .main__contenu-links span {
     margin-left: auto;
     font-weight: bold;
     display: flex;
@@ -437,13 +437,13 @@ footer h1{
     padding-bottom: 16px;
     padding-right: 19px;
   }
-  .section-page2__contenu-links i {
+  .main__contenu-links i {
     color: #99E2D0;
     background-color: white;
     padding: 6px;
     border-radius: 50%;
   }
-  .section-page2__contenu-links__item1 {
+  .main__contenu-links__item1 {
     background-color: white;
     width: 340px;
     height: auto;
@@ -453,7 +453,7 @@ footer h1{
     overflow: hidden;
     cursor: pointer;
   }
-  .section-page2__contenu-links__item2 {
+  .main__contenu-links__item2 {
     background-color: white;
     width: 340px;
     height: auto;
@@ -463,7 +463,7 @@ footer h1{
     overflow: hidden;
     cursor: pointer;
   }
-  .section-page2__contenu-links__item3 {
+  .main__contenu-links__item3 {
     background-color: white;
     width: 340px;
     height: auto;
@@ -473,16 +473,16 @@ footer h1{
     overflow: hidden;
     cursor: pointer;
   }
-  .section-page2__contenu-links__item1__contenu {
+  .main__contenu-links__item1__contenu {
     flex-direction: row;
     display: flex;
   }
-  .section-page2__contenu-links__item1__contenu__description {
+  .main__contenu-links__item1__contenu__description {
     padding: 1rem;
     white-space: nowrap;
     overflow: hidden;
   }
-  .section-page2__contenu-links__item1__contenu__check {
+  .main__contenu-links__item1__contenu__check {
     background-color: #99E2D0;
     margin-right: -55px;
     width: 55px;
@@ -492,7 +492,7 @@ footer h1{
     justify-content: center;
     align-items: center;
   }
-  .section-page2__contenu-links__item1__contenu__check--plat {
+  .main__contenu-links__item1__contenu__check--plat {
     background-color: #99E2D0;
     margin-right: -55px;
     width: 55px;
@@ -504,21 +504,21 @@ footer h1{
     width: 85px;
     margin-right: -85px;
   }
-  .section-page2__contenu-links__item1__contenu:hover .section-page2__contenu-links__item1__contenu__check {
+  .main__contenu-links__item1__contenu:hover .main__contenu-links__item1__contenu__check {
     margin-right: 0;
     border-radius: 0 1rem 1rem 0;
     box-shadow: 0px 0.4px 2px 0.3px #e8e8e8;
   }
-  .section-page2__contenu-links__item2__contenu {
+  .main__contenu-links__item2__contenu {
     flex-direction: row;
     display: flex;
   }
-  .section-page2__contenu-links__item2__contenu__description {
+  .main__contenu-links__item2__contenu__description {
     padding: 1rem;
     white-space: nowrap;
     overflow: hidden;
   }
-  .section-page2__contenu-links__item2__contenu__check {
+  .main__contenu-links__item2__contenu__check {
     background-color: #99E2D0;
     margin-right: -55px;
     width: 55px;
@@ -530,25 +530,25 @@ footer h1{
     width: 67px;
     margin-right: -67px;
   }
-  .section-page2__contenu-links__item2__contenu__check--plat {
+  .main__contenu-links__item2__contenu__check--plat {
     width: 76px;
     margin-right: -76px;
   }
-  .section-page2__contenu-links__item2__contenu:hover .section-page2__contenu-links__item2__contenu__check {
+  .main__contenu-links__item2__contenu:hover .main__contenu-links__item2__contenu__check {
     margin-right: 0;
     border-radius: 0 1rem 1rem 0;
     box-shadow: 0px 0.4px 2px 0.3px #e8e8e8;
   }
-  .section-page2__contenu-links__item3__contenu {
+  .main__contenu-links__item3__contenu {
     flex-direction: row;
     display: flex;
   }
-  .section-page2__contenu-links__item3__contenu__description {
+  .main__contenu-links__item3__contenu__description {
     padding: 1rem;
     white-space: nowrap;
     overflow: hidden;
   }
-  .section-page2__contenu-links__item3__contenu__check {
+  .main__contenu-links__item3__contenu__check {
     background-color: #99E2D0;
     margin-right: -55px;
     width: 55px;
@@ -560,16 +560,16 @@ footer h1{
     width: 72px;
     margin-right: -72px;
   }
-  .section-page2__contenu-links__item3__contenu__check--plat {
+  .main__contenu-links__item3__contenu__check--plat {
     width: 54px;
     margin-right: -54px;
   }
-  .section-page2__contenu-links__item3__contenu:hover .section-page2__contenu-links__item3__contenu__check {
+  .main__contenu-links__item3__contenu:hover .main__contenu-links__item3__contenu__check {
     margin-right: 0;
     border-radius: 0 1rem 1rem 0;
     box-shadow: 0px 0.4px 2px 0.3px #e8e8e8;
   }
-  .section-page2__button {
+  .main__button {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -577,7 +577,7 @@ footer h1{
     padding-top: 20px;
     background-color: #e8e8e8;
   }
-  .section-page2__button__btn {
+  .main__button__btn {
     border-radius: 30px;
     background: #9356DC;
     background: linear-gradient(347deg, #9356DC 20%, #FF79DA 93%);
@@ -591,10 +591,10 @@ footer h1{
     height: 50px;
     text-align: center;
   }
-  .section-page2__button__btn a {
+  .main__button__btn a {
     color: white;
   }
-  .section-page2__button__btn:hover {
+  .main__button__btn:hover {
     transition-duration: 0.35s;
     cursor: pointer;
     background: #9356DC;
@@ -602,18 +602,18 @@ footer h1{
   }
   
   @media only screen and (max-width:1800px) and (min-width: 1314px) {
-    .section-page2 {
+    .main {
       flex-direction: row;
       display: flex;
       justify-content: space-around;
       padding-left: 5px;
     }
-    .section-page2__contenu-links {
+    .main__contenu-links {
       margin-left: 15px;
     }
   }
   @media (max-width: 1314px) and (min-width: 768px) {
-    .section-page2 {
+    .main {
       flex-direction: row;
       display: flex;
       justify-content: space-around;

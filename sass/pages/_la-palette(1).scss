@@ -1,3 +1,64 @@
 @use "../utils/index" as *;
 @use "../components/index" as *;
 @use "../layout/index" as *;
+
+.main{
+    &__contenu-links__item1__contenu{
+        @include flex;
+        &__description{
+            @include item__description;
+        }
+        
+        &__check{
+           @include check;
+        }
+        &__check--plat{
+            @include check;
+            width: 85px;
+            margin-right: -85px;
+        }
+        &:hover .main__contenu-links__item1__contenu__check{
+            @include item-hover;
+        }
+    }
+    &__contenu-links__item2__contenu{
+        @include flex;
+        &__description{
+            @include item__description;
+        }
+        &__check{
+            @include check;
+            width: 67px;
+            margin-right: -67px;
+         }
+         &__check--plat{
+            width: 76px;
+            margin-right: -76px;
+         }
+         &__check--Desserts{
+            width: 76px;
+            margin-right: -76px;
+         }
+         &:hover .main__contenu-links__item2__contenu__check{
+            @include item-hover;
+        }
+    }
+    &__contenu-links__item3__contenu{
+        @include flex;
+        &__description{
+            @include item__description;
+        }
+        &__check{
+            @include check;
+            width: 72px;
+            margin-right: -72px;
+        }
+        &__check--plat{
+            width: 54px;
+            margin-right: -54px;
+        }
+        &:hover .main__contenu-links__item3__contenu__check{
+            @include item-hover;
+        }
+    }
+}
