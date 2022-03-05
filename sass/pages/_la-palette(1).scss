@@ -2,6 +2,17 @@
 @use "../components/index" as *;
 @use "../layout/index" as *;
 
+
+
+
+.header-page2{
+    &__baniere__img{
+        background: url(../../public/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+        @include baniere-image;
+     }
+}
+
+
 .main{
     &__contenu-links__item1__contenu{
         @include flex;

@@ -14,8 +14,6 @@
         }
     }
     &__baniere__img{
-        background: url(../../public/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
-        @include baniere-image;
         &__bande{
             position: absolute;
             background-color: $light-gray;

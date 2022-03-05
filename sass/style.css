@@ -335,15 +335,6 @@ li {
   align-items: center;
   justify-content: center;
 }
-.header-page2__baniere__img {
-  background: url(../../public/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 300px;
-  position: relative;
-}
 .header-page2__baniere__img__bande {
   position: absolute;
   background-color: #e8e8e8;
@@ -487,6 +478,16 @@ li {
   margin-left: 32px;
 }
 
+.header-page2__baniere__img {
+  background: url(../../public/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 300px;
+  position: relative;
+}
+
 .main__contenu-links__item1__contenu {
   flex-direction: row;
   display: flex;
@@ -583,6 +584,121 @@ li {
   margin-right: -54px;
 }
 .main__contenu-links__item3__contenu:hover .main__contenu-links__item3__contenu__check {
+  margin-right: 0;
+  border-radius: 0 1rem 1rem 0;
+  box-shadow: 0px 0.4px 2px 0.3px #e8e8e8;
+}
+
+.header-page2__baniere__img--la-note {
+  background: url(../../public/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 300px;
+  position: relative;
+}
+
+.main__contenu-links__item1__contenu {
+  flex-direction: row;
+  display: flex;
+}
+.main__contenu-links__item1__contenu__description {
+  padding: 1rem;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.main__contenu-links__item1__contenu__check__la-note {
+  background-color: #99E2D0;
+  margin-right: -55px;
+  width: 55px;
+  transition: all 0.5s;
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 85px;
+  margin-right: -85px;
+}
+.main__contenu-links__item1__contenu:hover .main__contenu-links__item1__contenu__check__la-note {
+  margin-right: 0;
+  border-radius: 0 1rem 1rem 0;
+  box-shadow: 0px 0.4px 2px 0.3px #e8e8e8;
+}
+.main__contenu-links__item2__contenu {
+  flex-direction: row;
+  display: flex;
+}
+.main__contenu-links__item2__contenu__description {
+  padding: 1rem;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.main__contenu-links__item2__contenu__check__la-note {
+  background-color: #99E2D0;
+  margin-right: -55px;
+  width: 55px;
+  transition: all 0.5s;
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 67px;
+  margin-right: -67px;
+}
+.main__contenu-links__item2__contenu:hover .main__contenu-links__item2__contenu__check__la-note {
+  margin-right: 0;
+  border-radius: 0 1rem 1rem 0;
+  box-shadow: 0px 0.4px 2px 0.3px #e8e8e8;
+}
+.main__contenu-links__item3__contenu {
+  flex-direction: row;
+  display: flex;
+}
+.main__contenu-links__item3__contenu__description {
+  padding: 1rem;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.main__contenu-links__item3__contenu__check__la-note {
+  background-color: #99E2D0;
+  margin-right: -55px;
+  width: 55px;
+  transition: all 0.5s;
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 72px;
+  margin-right: -72px;
+}
+.main__contenu-links__item3__contenu:hover .main__contenu-links__item3__contenu__check__la-note {
+  margin-right: 0;
+  border-radius: 0 1rem 1rem 0;
+  box-shadow: 0px 0.4px 2px 0.3px #e8e8e8;
+}
+.main__contenu-links__item4__contenu {
+  flex-direction: row;
+  display: flex;
+}
+.main__contenu-links__item4__contenu__description {
+  padding: 1rem;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.main__contenu-links__item4__contenu__check__la-note {
+  background-color: #99E2D0;
+  margin-right: -55px;
+  width: 55px;
+  transition: all 0.5s;
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 72px;
+  margin-right: -72px;
+}
+.main__contenu-links__item4__contenu:hover .main__contenu-links__item4__contenu__check__la-note__la-note {
   margin-right: 0;
   border-radius: 0 1rem 1rem 0;
   box-shadow: 0px 0.4px 2px 0.3px #e8e8e8;
