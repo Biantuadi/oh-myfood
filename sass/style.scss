@@ -426,8 +426,13 @@ li{
             width: 85px;
             margin-right: -85px;
         }
-        &:hover .section-page2__contenu-links__item1__contenu__check{
-            @include item-hover;
+        &:hover {
+            .section-page2__contenu-links__item1__contenu__check{
+                @include item-hover;
+            }
+            i{
+                animation: quarter .4s ease-in-out;
+            }
         }
     }
     &__contenu-links__item2__contenu{
@@ -444,8 +449,17 @@ li{
             width: 76px;
             margin-right: -76px;
          }
-         &:hover .section-page2__contenu-links__item2__contenu__check{
-            @include item-hover;
+         &__check--Desserts{
+            width: 76px;
+            margin-right: -76px;
+         }
+         &:hover {
+            .section-page2__contenu-links__item2__contenu__check{
+                @include item-hover;
+            }
+            i{
+                animation: quarter .4s ease-in-out;
+            }
         }
     }
     &__contenu-links__item3__contenu{
@@ -462,26 +476,13 @@ li{
             width: 54px;
             margin-right: -54px;
         }
-        &:hover .section-page2__contenu-links__item3__contenu__check{
-            @include item-hover;
-        }
-    }
-    &__contenu-links__item4__contenu{
-        @include flex;
-        &__description{
-            @include item__description;
-        }
-        &__check{
-            @include check;
-            width: 72px;
-            margin-right: -72px;
-        }
-        &__check--plat{
-            width: 54px;
-            margin-right: -54px;
-        }
-        &:hover .section-page2__contenu-links__item4__contenu__check{
-            @include item-hover;
+        &:hover {
+            .section-page2__contenu-links__item3__contenu__check{
+                @include item-hover;
+            }
+            i{
+                animation: quarter .4s ease-in-out;
+            }
         }
     }
     &__button{
