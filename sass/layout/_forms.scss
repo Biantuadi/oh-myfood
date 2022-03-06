@@ -1,5 +1,14 @@
 @use "../utils/index" as *;
 
+@keyframes quarter {
+    0%{
+        transform: rotate(-270deg);
+    }
+    100%{
+        transform: rotate(0);
+    }
+}
+
 .main{
     @include flex(column);
     background: $light-gray;

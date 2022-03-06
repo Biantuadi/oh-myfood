@@ -28,8 +28,13 @@
             width: 85px;
             margin-right: -85px;
         }
-        &:hover .main__contenu-links__item1__contenu__check{
-            @include item-hover;
+        &:hover {
+            .main__contenu-links__item1__contenu__check{
+                @include item-hover;
+            }
+            i{
+                animation: quarter .5s ease-in-out;
+            }
         }
     }
     &__contenu-links__item2__contenu{
@@ -50,8 +55,13 @@
             width: 76px;
             margin-right: -76px;
          }
-         &:hover .main__contenu-links__item2__contenu__check{
-            @include item-hover;
+         &:hover {
+            .main__contenu-links__item2__contenu__check{
+                @include item-hover;
+            }
+            i{
+                animation: quarter .5s ease-in-out;
+            }
         }
     }
     &__contenu-links__item3__contenu{
@@ -68,8 +78,13 @@
             width: 54px;
             margin-right: -54px;
         }
-        &:hover .main__contenu-links__item3__contenu__check{
-            @include item-hover;
+        &:hover {
+            .main__contenu-links__item3__contenu__check{
+                @include item-hover;
+            }
+            i{
+                animation: quarter .5s ease-in-out;
+            }
         }
     }
 }
