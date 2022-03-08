@@ -401,19 +401,19 @@ li{
     }
     &__contenu-links__item1{
         @include contenu-links__item;
-        animation: slide .4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        animation: slide .5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     }
     &__contenu-links__item2{
         @include contenu-links__item;
-        animation: slide .8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        animation: slide 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     }
     &__contenu-links__item3{
         @include contenu-links__item;
-        animation: slide 1.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        animation: slide 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     }
     &__contenu-links__item4{
         @include contenu-links__item;
-        animation: slide 1.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        animation: slide 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     }
     &__contenu-links__item1__contenu{
         @include flex;
@@ -429,9 +429,15 @@ li{
             width: 85px;
             margin-right: -85px;
         }
-        &:hover .section-page2__contenu-links__item1__contenu__check{
-            @include item-hover;
+        &:hover{
+            .section-page2__contenu-links__item1__contenu__check{
+                @include item-hover;
+            }
+            i{
+                animation: quarter .4s ease-in-out;
+            }
         }
+
     }
     &__contenu-links__item2__contenu{
         @include flex;
@@ -447,8 +453,13 @@ li{
             width: 76px;
             margin-right: -76px;
          }
-         &:hover .section-page2__contenu-links__item2__contenu__check{
-            @include item-hover;
+         &:hover{
+            .section-page2__contenu-links__item2__contenu__check{
+                @include item-hover;
+            }
+            i{
+                animation: quarter .4s ease-in-out;
+            }
         }
     }
     &__contenu-links__item3__contenu{
@@ -465,8 +476,13 @@ li{
             width: 54px;
             margin-right: -54px;
         }
-        &:hover .section-page2__contenu-links__item3__contenu__check{
-            @include item-hover;
+        &:hover{
+            .section-page2__contenu-links__item3__contenu__check{
+                @include item-hover;
+            }
+            i{
+                animation: quarter .4s ease-in-out;
+            }
         }
     }
     &__contenu-links__item4__contenu{
@@ -483,8 +499,13 @@ li{
             width: 54px;
             margin-right: -54px;
         }
-        &:hover .section-page2__contenu-links__item4__contenu__check{
-            @include item-hover;
+        &:hover{
+            .section-page2__contenu-links__item4__contenu__check{
+                @include item-hover;
+            }
+            i{
+                animation: quarter .4s ease-in-out;
+            }
         }
     }
     &__button{

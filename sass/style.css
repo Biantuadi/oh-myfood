@@ -59,12 +59,12 @@
 * animation slide
 * ----------------------------------------
 */
-@keyframes check {
+@keyframes quarter {
   0% {
-    transform: scale(0);
+    transform: rotate(-270deg);
   }
   100% {
-    transform: scale(1);
+    transform: rotate(0);
   }
 }
 * {
@@ -500,7 +500,7 @@ li {
   border-radius: 25px;
   overflow: hidden;
   cursor: pointer;
-  animation: slide 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 .section-page2__contenu-links__item2 {
   background-color: white;
@@ -511,7 +511,7 @@ li {
   border-radius: 25px;
   overflow: hidden;
   cursor: pointer;
-  animation: slide 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 .section-page2__contenu-links__item3 {
   background-color: white;
@@ -522,7 +522,7 @@ li {
   border-radius: 25px;
   overflow: hidden;
   cursor: pointer;
-  animation: slide 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 .section-page2__contenu-links__item4 {
   background-color: white;
@@ -533,7 +533,7 @@ li {
   border-radius: 25px;
   overflow: hidden;
   cursor: pointer;
-  animation: slide 1.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 .section-page2__contenu-links__item1__contenu {
   flex-direction: row;
@@ -571,6 +571,9 @@ li {
   border-radius: 0 1rem 1rem 0;
   box-shadow: 0px 0.4px 2px 0.3px #e8e8e8;
 }
+.section-page2__contenu-links__item1__contenu:hover i {
+  animation: quarter 0.4s ease-in-out;
+}
 .section-page2__contenu-links__item2__contenu {
   flex-direction: row;
   display: flex;
@@ -600,6 +603,9 @@ li {
   margin-right: 0;
   border-radius: 0 1rem 1rem 0;
   box-shadow: 0px 0.4px 2px 0.3px #e8e8e8;
+}
+.section-page2__contenu-links__item2__contenu:hover i {
+  animation: quarter 0.4s ease-in-out;
 }
 .section-page2__contenu-links__item3__contenu {
   flex-direction: row;
@@ -631,6 +637,9 @@ li {
   border-radius: 0 1rem 1rem 0;
   box-shadow: 0px 0.4px 2px 0.3px #e8e8e8;
 }
+.section-page2__contenu-links__item3__contenu:hover i {
+  animation: quarter 0.4s ease-in-out;
+}
 .section-page2__contenu-links__item4__contenu {
   flex-direction: row;
   display: flex;
@@ -660,6 +669,9 @@ li {
   margin-right: 0;
   border-radius: 0 1rem 1rem 0;
   box-shadow: 0px 0.4px 2px 0.3px #e8e8e8;
+}
+.section-page2__contenu-links__item4__contenu:hover i {
+  animation: quarter 0.4s ease-in-out;
 }
 .section-page2__button {
   width: 100%;
