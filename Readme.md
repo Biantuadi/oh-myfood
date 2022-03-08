@@ -1,6 +1,6 @@
 ![Ohmyfood](https://raw.githubusercontent.com/RachidBoubekeur-dev/Ohmyfood/master/images/logo/ohmyfood.png)
 
-## Intitulé du Projet :  Dynamiser une page web avec des animations 👨🏽‍💻
+## Intitulé du Projet :  Dynamiser une page web avec des animations 👨🏽‍💻👨🏽‍💻
 
 
 Vous pouvez retrouver le [brief complet ici](https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/DW_P3/Brief%20cre%CC%81atif%20-%20Ohmyfood!.pdf)
