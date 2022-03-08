@@ -41,6 +41,32 @@
   overflow: hidden;
 }
 
+/**
+ * ----------------------------------------
+ * animation slide
+ * ----------------------------------------
+ */
+@keyframes slide {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+/**
+* ----------------------------------------
+* animation slide
+* ----------------------------------------
+*/
+@keyframes check {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 * {
   font-family: "Raleway", sans-serif;
   box-sizing: border-box;
@@ -474,6 +500,7 @@ li {
   border-radius: 25px;
   overflow: hidden;
   cursor: pointer;
+  animation: slide 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 .section-page2__contenu-links__item2 {
   background-color: white;
@@ -484,6 +511,7 @@ li {
   border-radius: 25px;
   overflow: hidden;
   cursor: pointer;
+  animation: slide 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 .section-page2__contenu-links__item3 {
   background-color: white;
@@ -494,6 +522,7 @@ li {
   border-radius: 25px;
   overflow: hidden;
   cursor: pointer;
+  animation: slide 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 .section-page2__contenu-links__item4 {
   background-color: white;
@@ -504,6 +533,7 @@ li {
   border-radius: 25px;
   overflow: hidden;
   cursor: pointer;
+  animation: slide 1.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 .section-page2__contenu-links__item1__contenu {
   flex-direction: row;

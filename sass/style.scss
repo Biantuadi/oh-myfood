@@ -370,6 +370,14 @@ li{
     }
     &__contenu-links{
         @include flex(column);
+        // @for $i from 1 to 3 {
+        //     &:nth-child(#{$i}){
+	    //     animation: slide 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        // }
+        // }
+        // >*{
+	    //     animation: slide 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        // }
         h3,p{
             margin-bottom: 0;
             margin-top: 0;
@@ -393,15 +401,19 @@ li{
     }
     &__contenu-links__item1{
         @include contenu-links__item;
+        animation: slide .4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     }
     &__contenu-links__item2{
         @include contenu-links__item;
+        animation: slide .8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     }
     &__contenu-links__item3{
         @include contenu-links__item;
+        animation: slide 1.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     }
     &__contenu-links__item4{
         @include contenu-links__item;
+        animation: slide 1.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     }
     &__contenu-links__item1__contenu{
         @include flex;
