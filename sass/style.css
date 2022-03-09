@@ -25,7 +25,7 @@
 }
 
 .section__contenu__item1:hover, .section__contenu__item2:hover, .section__contenu__item3:hover, .section__contenu__item4:hover {
-  transform: scale(1.05);
+  transform: scale(1.03);
   box-shadow: 2px 1px 9px 1px #bdbdbd;
 }
 
@@ -87,23 +87,15 @@ li {
   list-style: none;
 }
 
-@keyframes quarter {
-  0% {
-    transform: rotate(-270deg);
-  }
-  100% {
-    transform: rotate(0);
-  }
-}
 .header {
   flex-direction: column;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.header__logo {
-  padding: 30px;
-  padding-bottom: 15px;
+.header__logo h1 {
+  font-family: "Shrikhand";
+  font-size: 37px;
 }
 .header__arctile {
   flex-direction: column;

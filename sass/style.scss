@@ -22,17 +22,8 @@ li{
     list-style: none;
 }
 
-@keyframes quarter {
-    0%{
-        transform: rotate(-270deg);
-    }
-    100%{
-        transform: rotate(0);
-    }
-}
 
-
-
+// +++++++++++++++++++++++++ first-page +++++++++++++++++++++++++++++++++++++++++++++
 
 
 .header
@@ -40,8 +31,10 @@ li{
     @include flex(column);
     @include flex-center;
     &__logo{
-        padding: 30px;
-        padding-bottom: 15px;
+        h1{
+            font-family: 'Shrikhand';
+            font-size: 37px;
+        }
     }
     &__arctile{
         @include flex(column);
@@ -71,7 +64,6 @@ li{
             &__btn{
                 @include size(auto,50px);
                 @include btn;
-                // padding: 14px;
             &:hover{
                 @include btn-hover;
             }
@@ -87,8 +79,6 @@ li{
         }
     }
 }
-
-// premier site (Menu)
 
 .nav{
     @include flex(column);
@@ -179,11 +169,10 @@ li{
     }
     i.motema-hover{
         @include motema-hov;
+        &:hover{
+            @include motema-hover;
+        }
     }
-    i.motema-hover:hover{
-        @include motema-hover;
-    }
-    
     i.motema-vide{
         @include motema-vide;
     }
@@ -379,14 +368,6 @@ li{
     }
     &__contenu-links{
         @include flex(column);
-        // @for $i from 1 to 3 {
-        //     &:nth-child(#{$i}){
-	    //     animation: slide 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-        // }
-        // }
-        // >*{
-	    //     animation: slide 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-        // }
         h3,p{
             margin-bottom: 0;
             margin-top: 0;
