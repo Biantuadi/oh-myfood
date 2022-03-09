@@ -122,7 +122,7 @@ li {
 @keyframes loader__spinner__ball-container-o {
   0% {
     opacity: 1;
-    transform: translate(0 0);
+    transform: translate(0);
   }
   49.99% {
     opacity: 1;
@@ -346,6 +346,16 @@ li {
 .nav__contenu-links__item3__cover {
   margin-bottom: 0;
 }
+@media (max-width: 372px) and (min-width: 323px) {
+  .nav {
+    margin-left: -20px;
+  }
+}
+@media (max-width: 323px) {
+  .nav {
+    margin-left: -25px;
+  }
+}
 @media only screen and (max-width:2000px) and (min-width: 768px) {
   .nav ol {
     display: flex;
@@ -402,11 +412,6 @@ li {
   position: relative;
   padding-left: 20px;
 }
-.section__titre {
-  padding-left: 15px;
-  margin-top: 40px;
-  margin-left: -250px;
-}
 .section__contenu {
   flex-direction: column;
   display: flex;
@@ -423,6 +428,35 @@ li {
 }
 .section__contenu__item1__card__badge, .section__contenu__item2__card__badge {
   position: absolute;
+}
+@media only screen and (max-width:768px) {
+  .section h2 {
+    padding-left: 15px;
+    margin-top: 40px;
+    margin-left: -250px;
+  }
+}
+@media (max-width: 372px) and (min-width: 323px) {
+  .section h2 {
+    padding-left: 15px;
+    margin-top: 40px;
+    margin-left: 0px;
+  }
+  .section img {
+    width: 290px;
+    height: 130px;
+  }
+}
+@media (max-width: 323px) {
+  .section h2 {
+    padding-left: 0px;
+    margin-top: 40px;
+    margin-left: 0px;
+  }
+  .section img {
+    width: 270px;
+    height: 110px;
+  }
 }
 @media only screen and (max-width:2000px) {
   .section__titre {
@@ -451,26 +485,7 @@ li {
   }
 }
 
-.header-page1 {
-  flex-direction: column;
-  display: flex;
-}
-.header-page1__logo {
-  flex-direction: row;
-  display: flex;
-  padding: 30px 0 20px 10px;
-  align-items: center;
-}
-.header-page1__logo__img {
-  width: 100%;
-  height: auto;
-  flex-direction: row;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: center;
-}
-.header-page1__baniere__img {
+.header-page__baniere__img {
   background: url(../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
   background-size: cover;
   background-position: center;
@@ -479,62 +494,12 @@ li {
   height: 300px;
   position: relative;
 }
-.header-page1__baniere__img__bande {
-  position: absolute;
-  background-color: #e8e8e8;
-  bottom: 0;
-  width: 100%;
-  height: 55px;
-  border-radius: 35px 35px 0 0;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding-top: 8px;
-}
-.header-page1__baniere__img__bande__title {
-  font-size: 27px;
-  font-family: "Shrikhand";
-}
-.header-page1__baniere__img__bande i {
-  font-size: 20px;
-}
-.header-page1__baniere__img__bande i.motema-hover {
-  color: white;
-  position: absolute;
-  font-size: 16.3px;
-  bottom: 1px;
-  left: 22px;
-  transition: 0.17s ease-in;
-  color: #e8e8e8;
-}
-.header-page1__baniere__img__bande i.motema-hover:hover {
-  color: transparent;
-  background-image: linear-gradient(347deg, #9356dc 0%, #ff79da 80%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  cursor: pointer;
-  bottom: 1px;
-  left: 22px;
-  transform: scale(1.39);
-  bottom: 1.3px;
-  transform: scale(1.4);
-  left: 22.5px;
-}
-.header-page1__baniere__img__bande i.motema-vide {
-  position: relative;
-  padding-left: 20px;
-}
-@media only screen and (max-width:2000px) {
-  .header-page1 .header__arctile {
-    width: 100%;
-  }
-}
 
 .section-page1 {
   flex-direction: column;
   display: flex;
   background: #e8e8e8;
-  padding-top: 10px;
+  padding-top: 26px;
   align-items: center;
   margin-left: -40px;
 }
@@ -676,6 +641,10 @@ li {
   width: 76px;
   margin-right: -76px;
 }
+.section-page1__contenu-links__item2__contenu__check--dessert {
+  width: 90px !important;
+  margin-right: -90px;
+}
 .section-page1__contenu-links__item2__contenu:hover .section-page1__contenu-links__item2__contenu__check {
   margin-right: 0;
   border-radius: 0 1rem 1rem 0;
@@ -750,6 +719,24 @@ li {
   cursor: pointer;
 }
 
+@media (max-width: 360px) and (min-width: 326px) {
+  .section-page1 {
+    margin-left: -5px;
+  }
+  .section-page1 li {
+    width: 300px;
+    height: auto;
+  }
+}
+@media (max-width: 326px) {
+  .section-page1 {
+    margin-left: -20px;
+  }
+  .section-page1 li {
+    width: 280px;
+    height: auto;
+  }
+}
 @media only screen and (max-width:2000px) and (min-width: 1314px) {
   .section-page1__logo i {
     margin-left: 70px;
@@ -783,26 +770,7 @@ li {
     padding-top: 53px;
   }
 }
-.header-page2 {
-  flex-direction: column;
-  display: flex;
-}
-.header-page2__logo {
-  flex-direction: row;
-  display: flex;
-  padding: 30px 0 20px 10px;
-  align-items: center;
-}
-.header-page2__logo__img {
-  width: 100%;
-  height: auto;
-  flex-direction: row;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: center;
-}
-.header-page2__baniere__img {
+.header-page__baniere__img--page2 {
   background: url(../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
   background-size: cover;
   background-position: center;
@@ -811,62 +779,12 @@ li {
   height: 300px;
   position: relative;
 }
-.header-page2__baniere__img__bande {
-  position: absolute;
-  background-color: #e8e8e8;
-  bottom: 0;
-  width: 100%;
-  height: 55px;
-  border-radius: 35px 35px 0 0;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding-top: 8px;
-}
-.header-page2__baniere__img__bande__title {
-  font-size: 27px;
-  font-family: "Shrikhand";
-}
-.header-page2__baniere__img__bande i {
-  font-size: 20px;
-}
-.header-page2__baniere__img__bande i.motema-hover {
-  color: white;
-  position: absolute;
-  font-size: 16.3px;
-  bottom: 1px;
-  left: 22px;
-  transition: 0.17s ease-in;
-  color: #e8e8e8;
-}
-.header-page2__baniere__img__bande i.motema-hover:hover {
-  color: transparent;
-  background-image: linear-gradient(347deg, #9356dc 0%, #ff79da 80%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  cursor: pointer;
-  bottom: 1px;
-  left: 22px;
-  transform: scale(1.39);
-  bottom: 1.3px;
-  transform: scale(1.4);
-  left: 22.5px;
-}
-.header-page2__baniere__img__bande i.motema-vide {
-  position: relative;
-  padding-left: 20px;
-}
-@media only screen and (max-width:2000px) {
-  .header-page2 .header__arctile {
-    width: 100%;
-  }
-}
 
 .section-page2 {
   flex-direction: column;
   display: flex;
   background: #e8e8e8;
-  padding-top: 10px;
+  padding-top: 26px;
   align-items: center;
   margin-left: -40px;
 }
@@ -1117,6 +1035,24 @@ li {
   cursor: pointer;
 }
 
+@media (max-width: 360px) and (min-width: 326px) {
+  .section-page2 {
+    margin-left: -5px;
+  }
+  .section-page2 li {
+    width: 300px;
+    height: auto;
+  }
+}
+@media (max-width: 326px) {
+  .section-page2 {
+    margin-left: -20px;
+  }
+  .section-page2 li {
+    width: 280px;
+    height: auto;
+  }
+}
 @media only screen and (max-width:2000px) and (min-width: 1314px) {
   .section-page2__logo i {
     margin-left: 70px;
@@ -1150,26 +1086,7 @@ li {
     padding-top: 53px;
   }
 }
-.header-page3 {
-  flex-direction: column;
-  display: flex;
-}
-.header-page3__logo {
-  flex-direction: row;
-  display: flex;
-  padding: 30px 0 20px 10px;
-  align-items: center;
-}
-.header-page3__logo__img {
-  width: 100%;
-  height: auto;
-  flex-direction: row;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: center;
-}
-.header-page3__baniere__img {
+.header-page__baniere__img--page3 {
   background: url(../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
   background-size: cover;
   background-position: center;
@@ -1178,62 +1095,12 @@ li {
   height: 300px;
   position: relative;
 }
-.header-page3__baniere__img__bande {
-  position: absolute;
-  background-color: #e8e8e8;
-  bottom: 0;
-  width: 100%;
-  height: 55px;
-  border-radius: 35px 35px 0 0;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding-top: 8px;
-}
-.header-page3__baniere__img__bande__title {
-  font-size: 27px;
-  font-family: "Shrikhand";
-}
-.header-page3__baniere__img__bande i {
-  font-size: 20px;
-}
-.header-page3__baniere__img__bande i.motema-hover {
-  color: white;
-  position: absolute;
-  font-size: 16.3px;
-  bottom: 1px;
-  left: 22px;
-  transition: 0.17s ease-in;
-  color: #e8e8e8;
-}
-.header-page3__baniere__img__bande i.motema-hover:hover {
-  color: transparent;
-  background-image: linear-gradient(347deg, #9356dc 0%, #ff79da 80%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  cursor: pointer;
-  bottom: 1px;
-  left: 22px;
-  transform: scale(1.39);
-  bottom: 1.3px;
-  transform: scale(1.4);
-  left: 22.5px;
-}
-.header-page3__baniere__img__bande i.motema-vide {
-  position: relative;
-  padding-left: 20px;
-}
-@media only screen and (max-width:2000px) {
-  .header-page3 .header__arctile {
-    width: 100%;
-  }
-}
 
 .section-page3 {
   flex-direction: column;
   display: flex;
   background: #e8e8e8;
-  padding-top: 10px;
+  padding-top: 26px;
   align-items: center;
   margin-left: -40px;
 }
@@ -1449,6 +1316,24 @@ li {
   cursor: pointer;
 }
 
+@media (max-width: 360px) and (min-width: 326px) {
+  .section-page3 {
+    margin-left: -5px;
+  }
+  .section-page3 li {
+    width: 300px;
+    height: auto;
+  }
+}
+@media (max-width: 326px) {
+  .section-page3 {
+    margin-left: -20px;
+  }
+  .section-page3 li {
+    width: 280px;
+    height: auto;
+  }
+}
 @media only screen and (max-width:2000px) and (min-width: 1314px) {
   .section-page3__logo i {
     margin-left: 70px;
@@ -1482,17 +1367,17 @@ li {
     padding-top: 53px;
   }
 }
-.header-page4 {
+.header-page {
   flex-direction: column;
   display: flex;
 }
-.header-page4__logo {
+.header-page__logo {
   flex-direction: row;
   display: flex;
-  padding: 30px 0 20px 10px;
+  padding: 30px 0 20px 25px;
   align-items: center;
 }
-.header-page4__logo__img {
+.header-page__logo__img {
   width: 100%;
   height: auto;
   flex-direction: row;
@@ -1501,16 +1386,7 @@ li {
   align-items: center;
   justify-content: center;
 }
-.header-page4__baniere__img {
-  background: url(../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 300px;
-  position: relative;
-}
-.header-page4__baniere__img__bande {
+.header-page__baniere__img__bande {
   position: absolute;
   background-color: #e8e8e8;
   bottom: 0;
@@ -1522,14 +1398,14 @@ li {
   align-items: center;
   padding-top: 8px;
 }
-.header-page4__baniere__img__bande__title {
+.header-page__baniere__img__bande__baniere__img__title {
   font-size: 27px;
   font-family: "Shrikhand";
 }
-.header-page4__baniere__img__bande i {
+.header-page__baniere__img__bande i {
   font-size: 20px;
 }
-.header-page4__baniere__img__bande i.motema-hover {
+.header-page__baniere__img__bande i.motema-hover {
   color: white;
   position: absolute;
   font-size: 16.3px;
@@ -1538,7 +1414,7 @@ li {
   transition: 0.17s ease-in;
   color: #e8e8e8;
 }
-.header-page4__baniere__img__bande i.motema-hover:hover {
+.header-page__baniere__img__bande i.motema-hover:hover {
   color: transparent;
   background-image: linear-gradient(347deg, #9356dc 0%, #ff79da 80%);
   background-clip: text;
@@ -1551,21 +1427,36 @@ li {
   transform: scale(1.4);
   left: 22.5px;
 }
-.header-page4__baniere__img__bande i.motema-vide {
+.header-page__baniere__img__bande i.motema-vide {
   position: relative;
   padding-left: 20px;
 }
+@media (max-width: 360px) {
+  .header-page h1 {
+    font-size: 20px;
+  }
+}
 @media only screen and (max-width:2000px) {
-  .header-page4 .header__arctile {
+  .header-page .header__arctile {
     width: 100%;
   }
+}
+
+.header-page__baniere__img--page4 {
+  background: url(../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 300px;
+  position: relative;
 }
 
 .section-page4 {
   flex-direction: column;
   display: flex;
   background: #e8e8e8;
-  padding-top: 10px;
+  padding-top: 26px;
   align-items: center;
   margin-left: -40px;
 }
@@ -1700,12 +1591,12 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 67px;
-  margin-right: -67px;
+  width: 75px;
+  margin-right: -75px;
 }
 .section-page4__contenu-links__item2__contenu__check--plat {
-  width: 76px;
-  margin-right: -76px;
+  width: 56px;
+  margin-right: -56px;
 }
 .section-page4__contenu-links__item2__contenu:hover .section-page4__contenu-links__item2__contenu__check {
   margin-right: 0;
@@ -1733,12 +1624,8 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 72px;
-  margin-right: -72px;
-}
-.section-page4__contenu-links__item3__contenu__check--plat {
-  width: 54px;
-  margin-right: -54px;
+  width: 55px;
+  margin-right: -55px;
 }
 .section-page4__contenu-links__item3__contenu:hover .section-page4__contenu-links__item3__contenu__check {
   margin-right: 0;
@@ -1798,6 +1685,24 @@ li {
   }
   .section-page4 .colum-2, .section-page4 .colum-3 {
     padding-left: 86px;
+  }
+}
+@media (max-width: 360px) and (min-width: 326px) {
+  .section-page4 {
+    margin-left: -5px;
+  }
+  .section-page4 li {
+    width: 300px;
+    height: auto;
+  }
+}
+@media (max-width: 326px) {
+  .section-page4 {
+    margin-left: -20px;
+  }
+  .section-page4 li {
+    width: 280px;
+    height: auto;
   }
 }
 @media (max-width: 1314px) and (min-width: 768px) {

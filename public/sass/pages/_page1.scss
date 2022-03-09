@@ -2,66 +2,17 @@
 @use "../layout/footer" as *;
 
 
-.header-page1{
-    @include flex(column);
-    &__logo{
-        @include flex;
-        padding: 30px 0 20px 10px;
-        @include align-itm;
-        &__img{
-            @include size(100%,auto);
-            @include flex;
-            @include flex-center;
-            justify-content: center;
-        }
-    }
+.header-page{
     &__baniere__img{
         background: url(../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
         @include baniere-image;
-        &__bande{
-            position: absolute;
-            background-color: $light-gray;
-            bottom: 0;
-            @include size($height:55px);
-            border-radius: 35px 35px 0 0;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            padding-top: 8px;
-        &__title{
-            font-size: 27px;
-            font-family: 'Shrikhand';
-        }
-        i{
-            font-size: 20px;
-        }
-        i.motema-hover{
-            @include motema-hov;
-            color: $light-gray;
-        }
-        i.motema-hover:hover{
-            @include motema-hover;
-            bottom: 1.3px;
-            transform: scale(1.4);
-            left: 22.5px;
-        }
         
-        i.motema-vide{
-            @include motema-vide;
-        }
-        }
-        
-    }
-    @media #{$desktop} {
-        .header__arctile{
-            width: 100%;
-        }
     }
 }
 .section-page1{
     @include flex(column);
     background: $light-gray;
-    padding-top: 10px;
+    padding-top: 26px;
     @include align-itm;
     @include margin-l(-40px);
     &__titre1,
@@ -150,10 +101,10 @@
             width: 76px;
             margin-right: -76px;
          }
-        //  &__check--Dessert{
-        //      width: 90px !important;
-        //      margin-right: -90px;
-        //  }
+         &__check--dessert{
+             width: 90px !important;
+             margin-right: -90px;
+         }
          &:hover{
             .section-page1__contenu-links__item2__contenu__check{
                 @include item-hover;
@@ -204,6 +155,25 @@
     }
    
 }
+
+@media (max-width:360px) and (min-width:326px){
+    .section-page1{
+        @include margin-l(-5px);
+        li{
+            @include size(300px,auto);
+        }
+    }
+}
+@media (max-width:326px){
+    .section-page1{
+        @include margin-l(-20px);
+        li{
+            @include size(280px,auto);
+        }
+    }
+}
+
+
 @media #{$desktop} and (min-width:1314px){
     .section-page1__logo{
         i{

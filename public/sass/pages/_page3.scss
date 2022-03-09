@@ -2,59 +2,10 @@
 @use "../layout/footer" as *;
 
 
-.header-page3{
-    @include flex(column);
-    &__logo{
-        @include flex;
-        padding: 30px 0 20px 10px;
-        @include align-itm;
-        &__img{
-            @include size(100%,auto);
-            @include flex;
-            @include flex-center;
-            justify-content: center;
-        }
-    }
-    &__baniere__img{
+.header-page{
+    &__baniere__img--page3{
         background: url(../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
         @include baniere-image;
-        &__bande{
-            position: absolute;
-            background-color: $light-gray;
-            bottom: 0;
-            @include size($height:55px);
-            border-radius: 35px 35px 0 0;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            padding-top: 8px;
-        &__title{
-            font-size: 27px;
-            font-family: 'Shrikhand';
-        }
-        i{
-            font-size: 20px;
-        }
-        i.motema-hover{
-            @include motema-hov;
-            color: $light-gray;
-        }
-        i.motema-hover:hover{
-            @include motema-hover;
-            bottom: 1.3px;
-            transform: scale(1.4);
-            left: 22.5px;
-        }
-        
-        i.motema-vide{
-            @include motema-vide;
-        }
-        }
-    }
-    @media #{$desktop} {
-        .header__arctile{
-            width: 100%;
-        }
     }
 }
 
@@ -63,7 +14,7 @@
 .section-page3{
     @include flex(column);
     background: $light-gray;
-    padding-top: 10px;
+    padding-top: 26px;
     @include align-itm;
     @include margin-l(-40px);
     &__titre1,
@@ -198,6 +149,23 @@
         @include margin-l(32px);
         &:hover{
             @include btn-hover;
+        }
+    }
+}
+
+@media (max-width:360px) and (min-width:326px){
+    .section-page3{
+        @include margin-l(-5px);
+        li{
+            @include size(300px,auto);
+        }
+    }
+}
+@media (max-width:326px){
+    .section-page3{
+        @include margin-l(-20px);
+        li{
+            @include size(280px,auto);
         }
     }
 }

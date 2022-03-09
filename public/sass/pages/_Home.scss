@@ -113,6 +113,15 @@
         margin-bottom: 0;
     }
 
+    @media (max-width:372px) and (min-width:323px) {
+        @include margin-l(-20px);
+        
+    }
+    @media (max-width:323px){
+        @include margin-l(-25px);
+        
+    }
+
     @media #{$desktop} and (min-width:768px) {
         ol{
             display: flex;
@@ -153,11 +162,6 @@
     i.motema-vide{
         @include motema-vide;
     }
-    &__titre{
-        padding-left: 15px;
-        margin-top: 40px;
-        @include margin-l(-250px);
-    }
     &__contenu{
         @include flex(column);
         @include align-itm;
@@ -194,6 +198,37 @@
     &__contenu__item2__card__badge{
        @extend %item-badge-section;
        position: absolute;
+    }
+
+    @media #{$phone} {
+        
+        h2{
+        padding-left: 15px;
+        margin-top: 40px;
+        @include margin-l(-250px);
+        }
+    }
+    @media (max-width:372px) and (min-width:323px) {
+        
+        h2{
+        padding-left: 15px;
+        margin-top: 40px;
+        @include margin-l(0px);
+        }
+        img{
+            @include size(290px, 130px);
+        }
+    }
+    @media (max-width:323px){
+        h2{
+            padding-left: 0px;
+            margin-top: 40px;
+            @include margin-l(0px);
+            }
+        img{
+            @include size(270px, 110px);
+        }
+        
     }
 
     @media #{$desktop}{

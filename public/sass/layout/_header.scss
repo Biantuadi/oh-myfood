@@ -1,0 +1,61 @@
+@use "../utils/index" as *;
+
+
+.header-page{
+    @include flex(column);
+    &__logo{
+        @include flex;
+        padding: 30px 0 20px 25px;
+        @include align-itm;
+        &__img{
+            @include size(100%,auto);
+            @include flex;
+            @include flex-center;
+            justify-content: center;
+        }
+    }
+    &__baniere__img{
+        &__bande{
+            position: absolute;
+            background-color: $light-gray;
+            bottom: 0;
+            @include size($height:55px);
+            border-radius: 35px 35px 0 0;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding-top: 8px;
+        &__baniere__img__title{
+            font-size: 27px;
+            font-family: 'Shrikhand';
+            }
+            i{
+                font-size: 20px;
+            }
+            i.motema-hover{
+                @include motema-hov;
+                color: $light-gray;
+            }
+            i.motema-hover:hover{
+                @include motema-hover;
+                bottom: 1.3px;
+                transform: scale(1.4);
+                left: 22.5px;
+                
+            }
+            i.motema-vide{
+                @include motema-vide;
+            }
+        } 
+    }
+    @media (max-width:360px){
+        h1{
+            font-size: 20px;
+        }
+    }
+    @media #{$desktop} {
+        .header__arctile{
+            width: 100%;
+        }
+    }
+}
