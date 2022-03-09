@@ -44,7 +44,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: disapear .4s 2.5s forwards ease-in-out;
+  animation: disapear .4s 2.3s forwards ease-in-out;
   transform-origin: 50% bottom;
 }
 
@@ -123,17 +123,17 @@
 }
 .loader__spinner__ball-container div:nth-child(1) {
   background: #9356DC;
-  animation: loader__spinner__ball-container 1s linear infinite;
+  animation: loader__spinner__ball-container .9s linear infinite;
   animation-delay: -0.5s;
 }
 .loader__spinner__ball-container div:nth-child(2) {
   background: #FF79DA;
-  animation: loader__spinner__ball-container 1s linear infinite;
+  animation: loader__spinner__ball-container .9s linear infinite;
   animation-delay: 0s;
 }
 .loader__spinner__ball-container div:nth-child(3) {
   background: #9356DC;
-  animation: loader__spinner__ball-container-o 1s linear infinite;
+  animation: loader__spinner__ball-container-o .9s linear infinite;
   animation-delay: -0.5s;
 }
 
