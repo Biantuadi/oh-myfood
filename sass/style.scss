@@ -218,6 +218,14 @@ li{
        @extend %item-badge-section;
        position: absolute;
     }
+
+    @media #{$desktop}{
+        &__titre{
+            margin-top: 40px;
+            @include margin-l(0px);
+            text-align: center
+        }
+    }
     
     @media #{$desktop}{
         .section__contenu{
@@ -259,6 +267,7 @@ li{
     }
     &__list{
         @include flex(column);
+        margin-left: -27px;
     }
     &__list__links{
         margin-bottom: 20px;
@@ -266,16 +275,6 @@ li{
     }
     &__list__links--modif{
         margin-bottom: 0;
-    }
-
-    @media (max-width:1700px) and (min-width:768px){
-        footer h1{
-            margin-left: 64px;
-        }
-        .footer__list{
-            margin-left: 51px;
-        }
-
     }
 }
 

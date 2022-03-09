@@ -290,6 +290,13 @@ li {
   position: absolute;
 }
 @media only screen and (max-width:2000px) {
+  .section__titre {
+    margin-top: 40px;
+    margin-left: 0px;
+    text-align: center;
+  }
+}
+@media only screen and (max-width:2000px) {
   .section .section__contenu {
     flex-direction: row;
     display: flex;
@@ -330,20 +337,13 @@ li {
 .footer__list {
   flex-direction: column;
   display: flex;
+  margin-left: -27px;
 }
 .footer__list__links {
   margin-bottom: 20px;
 }
 .footer__list__links--modif {
   margin-bottom: 0;
-}
-@media (max-width: 1700px) and (min-width: 768px) {
-  .footer footer h1 {
-    margin-left: 64px;
-  }
-  .footer .footer__list {
-    margin-left: 51px;
-  }
 }
 
 /* *********************deuxieme site**************************** */
