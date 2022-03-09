@@ -1,6 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700;800&family=Shrikhand&display=swap");
+* {
+  font-family: "Raleway", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Shrikhand", cursive;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+li {
+  list-style: none;
+}
+
 .nav__contenu-links__item1__cover, .nav__contenu-links__item2__cover, .nav__contenu-links__item3__cover {
   display: flex;
   align-items: center;
@@ -35,7 +55,7 @@
   align-items: center;
 }
 
-.section-page1__contenu-links h3, .section-page1__contenu-links p, .section-page2__contenu-links h3, .section-page2__contenu-links p, .section-page3__contenu-links h3, .section-page3__contenu-links p, .section-page4__contenu-links h3, .section-page4__contenu-links p {
+.section-page4__contenu-links h3, .section-page4__contenu-links p, .section-page3__contenu-links h3, .section-page3__contenu-links p, .section-page2__contenu-links h3, .section-page2__contenu-links p, .section-page1__contenu-links h3, .section-page1__contenu-links p {
   text-overflow: ellipsis;
   overflow: hidden;
 }
@@ -172,24 +192,34 @@
   animation-delay: -0.5s;
 }
 
-* {
-  font-family: "Raleway", sans-serif;
-  box-sizing: border-box;
+.footer {
+  flex-direction: column;
+  display: flex;
+  padding: 20px 0 50px 15px;
+  background-color: #4b4b4b;
+  color: #f7f7f7;
+  font-weight: bold;
 }
-
-body {
-  font-family: "Shrikhand", cursive;
-  margin: 0;
-  padding: 0;
+.footer h1 {
+  font-family: "Shrikhand";
+  font-size: 22px;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
-
-a {
-  text-decoration: none;
-  color: black;
+.footer a {
+  color: #e8e8e8;
+  font-size: 17px;
 }
-
-li {
-  list-style: none;
+.footer__list {
+  flex-direction: column;
+  display: flex;
+  margin-left: -27px;
+}
+.footer__list__links {
+  margin-bottom: 20px;
+}
+.footer__list__links--modif {
+  margin-bottom: 0;
 }
 
 .header {
@@ -421,37 +451,6 @@ li {
   }
 }
 
-.footer {
-  flex-direction: column;
-  display: flex;
-  padding: 20px 0 50px 15px;
-  background-color: #4b4b4b;
-  color: #f7f7f7;
-  font-weight: bold;
-}
-.footer h1 {
-  font-family: "Shrikhand";
-  font-size: 22px;
-  margin-bottom: 0;
-  padding-bottom: 0;
-}
-.footer a {
-  color: #e8e8e8;
-  font-size: 17px;
-}
-.footer__list {
-  flex-direction: column;
-  display: flex;
-  margin-left: -27px;
-}
-.footer__list__links {
-  margin-bottom: 20px;
-}
-.footer__list__links--modif {
-  margin-bottom: 0;
-}
-
-/* *********************page 2**************************** */
 .header-page1 {
   flex-direction: column;
   display: flex;
@@ -963,6 +962,8 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 88px;
+  margin-right: -88px;
 }
 .section-page2__contenu-links__item1__contenu__check--plat {
   background-color: #99E2D0;
@@ -1006,8 +1007,8 @@ li {
   margin-right: -67px;
 }
 .section-page2__contenu-links__item2__contenu__check--plat {
-  width: 76px;
-  margin-right: -76px;
+  width: 59px;
+  margin-right: -59px;
 }
 .section-page2__contenu-links__item2__contenu:hover .section-page2__contenu-links__item2__contenu__check {
   margin-right: 0;
@@ -1035,12 +1036,12 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 72px;
-  margin-right: -72px;
+  width: 88px;
+  margin-right: -88px;
 }
 .section-page2__contenu-links__item3__contenu__check--plat {
-  width: 54px;
-  margin-right: -54px;
+  width: 77px;
+  margin-right: -77px;
 }
 .section-page2__contenu-links__item3__contenu:hover .section-page2__contenu-links__item3__contenu__check {
   margin-right: 0;
@@ -1068,8 +1069,8 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 72px;
-  margin-right: -72px;
+  width: 88px;
+  margin-right: -88px;
 }
 .section-page2__contenu-links__item4__contenu__check--plat {
   width: 54px;

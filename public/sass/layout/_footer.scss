@@ -1,0 +1,32 @@
+@use "../utils/index" as *;
+
+
+
+.footer{
+    @include flex(column);
+    padding: 20px 0 50px 15px;
+    background-color: #4b4b4b;
+    color: $extralight-gray;
+    font-weight: bold;
+    h1{
+        font-family: 'Shrikhand';
+        font-size: 22px;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    a{
+        color: $light-gray;
+        font-size: 17px;
+    }
+    &__list{
+        @include flex(column);
+        margin-left: -27px;
+    }
+    &__list__links{
+        margin-bottom: 20px;
+
+    }
+    &__list__links--modif{
+        margin-bottom: 0;
+    }
+}
