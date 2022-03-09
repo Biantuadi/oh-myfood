@@ -350,7 +350,7 @@ li{
         }
     }
 }
-.section-page2{
+.page1{
     @include flex(column);
     background: $light-gray;
     padding-top: 10px;
@@ -419,7 +419,7 @@ li{
             margin-right: -85px;
         }
         &:hover{
-            .section-page2__contenu-links__item1__contenu__check{
+            .page1__contenu-links__item1__contenu__check{
                 @include item-hover;
             }
             i{
@@ -443,7 +443,7 @@ li{
             margin-right: -76px;
          }
          &:hover{
-            .section-page2__contenu-links__item2__contenu__check{
+            .page1__contenu-links__item2__contenu__check{
                 @include item-hover;
             }
             i{
@@ -466,7 +466,7 @@ li{
             margin-right: -54px;
         }
         &:hover{
-            .section-page2__contenu-links__item3__contenu__check{
+            .page1__contenu-links__item3__contenu__check{
                 @include item-hover;
             }
             i{
@@ -489,7 +489,7 @@ li{
             margin-right: -54px;
         }
         &:hover{
-            .section-page2__contenu-links__item4__contenu__check{
+            .page1__contenu-links__item4__contenu__check{
                 @include item-hover;
             }
             i{
@@ -521,7 +521,7 @@ li{
             margin-left: 70px;
         }
     }
-    .section-page2{
+    .page1{
         @include flex;
         justify-content: space-around;
         align-items: baseline;
@@ -540,7 +540,7 @@ li{
             margin-left: 95px;
         }
     }
-    .section-page2{
+    .page1{
         @include flex;
         justify-content: space-around;
         align-items: baseline;
