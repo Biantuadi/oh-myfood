@@ -81,23 +81,23 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: disapear 0.4s 2.5s forwards ease-out;
+  animation: disapear 0.4s 2.5s forwards ease-in-out;
   transform-origin: 50% bottom;
 }
 
 @keyframes disapear {
   0% {
-    transform: scale(1);
+    opacity: 0.741;
   }
   20% {
-    background: rgba(255, 255, 255, 0.441);
+    opacity: 0.441;
   }
   50% {
-    background: rgba(255, 255, 255, 0.241);
+    opacity: 0.241;
   }
   100% {
-    transform: scale(0);
     opacity: 0;
+    z-index: -1;
   }
 }
 @keyframes loader__spinner__ball-container-o {
