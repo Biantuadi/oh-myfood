@@ -29,22 +29,35 @@
             font-size: 27px;
             font-family: 'Shrikhand';
             }
-            i{
-                font-size: 20px;
-            }
-            i.motema-hover{
-                @include motema-hov;
-                color: $light-gray;
-            }
-            i.motema-hover:hover{
-                @include motema-hover;
-                bottom: 1.3px;
-                transform: scale(1.4);
-                left: 22.5px;
-                
-            }
-            i.motema-vide{
-                @include motema-vide;
+            .container{
+                justify-content: center;
+                display: flex;
+                align-items: center;
+                height: 80px;
+                i{
+                    font-size: 20px;
+                }
+                .far{
+                    margin-left: -20px;
+                    &:hover{
+                        z-index: -1;
+                    }
+                }
+                .fas{
+                    color: transparent;
+                    transition: all .17s ease-in;
+                    &:hover{
+                        background-image: linear-gradient(347deg,#9356dc 0%, #ff79da 80%);
+                        background-clip: text;
+                        -webkit-background-clip: text;
+                        color: transparent;
+                        cursor: pointer;
+                        z-index: 1;
+                    }
+                    &:hover +.far{
+                        display: none;
+                    }
+                }
             }
         } 
     }
