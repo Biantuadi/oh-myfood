@@ -384,30 +384,34 @@ li {
   margin: 0;
   padding: 10px 0 3px 0;
 }
-.section i {
+.section__contenu__item1__footer__icon, .section__contenu__item2__footer__icon, .section__contenu__item3__footer__icon, .section__contenu__item4__footer__icon {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.section__contenu__item1__footer__icon i, .section__contenu__item2__footer__icon i, .section__contenu__item3__footer__icon i, .section__contenu__item4__footer__icon i {
   font-size: 20px;
 }
-.section i.motema-hover {
-  color: white;
-  position: absolute;
-  font-size: 16.3px;
-  bottom: 1px;
-  left: 22px;
-  transition: 0.17s ease-in;
+.section__contenu__item1__footer__icon .far, .section__contenu__item2__footer__icon .far, .section__contenu__item3__footer__icon .far, .section__contenu__item4__footer__icon .far {
+  margin-left: -20px;
 }
-.section i.motema-hover:hover {
+.section__contenu__item1__footer__icon .far:hover, .section__contenu__item2__footer__icon .far:hover, .section__contenu__item3__footer__icon .far:hover, .section__contenu__item4__footer__icon .far:hover {
+  z-index: -1;
+}
+.section__contenu__item1__footer__icon .fas, .section__contenu__item2__footer__icon .fas, .section__contenu__item3__footer__icon .fas, .section__contenu__item4__footer__icon .fas {
   color: transparent;
+  transition: all 0.17s ease-in;
+}
+.section__contenu__item1__footer__icon .fas:hover, .section__contenu__item2__footer__icon .fas:hover, .section__contenu__item3__footer__icon .fas:hover, .section__contenu__item4__footer__icon .fas:hover {
   background-image: linear-gradient(347deg, #9356dc 0%, #ff79da 80%);
   background-clip: text;
   -webkit-background-clip: text;
+  color: transparent;
   cursor: pointer;
-  bottom: 1px;
-  left: 22px;
-  transform: scale(1.39);
+  z-index: 1;
 }
-.section i.motema-vide {
-  position: relative;
-  padding-left: 20px;
+.section__contenu__item1__footer__icon .fas:hover + .far, .section__contenu__item2__footer__icon .fas:hover + .far, .section__contenu__item3__footer__icon .fas:hover + .far, .section__contenu__item4__footer__icon .fas:hover + .far {
+  display: none;
 }
 .section__contenu {
   flex-direction: column;
