@@ -21,31 +21,31 @@
     cursor: pointer;
 }
 
-// icon-heart
+// // icon-heart
 
-@mixin motema-vide {
-    position: relative;
-    padding-left: 20px;
-}
+// @mixin motema-vide {
+//     position: relative;
+//     padding-left: 20px;
+// }
 
-@mixin motema-hov {
-    color: white;
-    position: absolute;
-    font-size: 16.3px;
-    bottom: 1px;
-    left: 22px;
-    transition: .17s ease-in;
-}
-@mixin motema-hover{
-    color: transparent;
-    background-image: linear-gradient(347deg,#9356dc 0%, #ff79da 80%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    cursor: pointer;
-    bottom: 1px;
-    left: 22px;
-    transform: scale(1.39);
-}
+// @mixin motema-hov {
+//     color: white;
+//     position: absolute;
+//     font-size: 16.3px;
+//     bottom: 1px;
+//     left: 22px;
+//     transition: .17s ease-in;
+// }
+// @mixin motema-hover{
+//     color: transparent;
+//     background-image: linear-gradient(347deg,#9356dc 0%, #ff79da 80%);
+//     background-clip: text;
+//     -webkit-background-clip: text;
+//     cursor: pointer;
+//     bottom: 1px;
+//     left: 22px;
+//     transform: scale(1.39);
+// }
 
 
 // premier site (Menu)
