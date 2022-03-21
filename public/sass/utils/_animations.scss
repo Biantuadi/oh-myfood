@@ -37,7 +37,7 @@
 
 .loader{
   position: fixed;
-  background: hsla(0, 0%, 100%, 0.952);
+  background: hsl(0, 0%, 100%);
   height: 100vh;
   inset: 0;
   z-index: 1;
@@ -50,10 +50,7 @@
 
 @keyframes disapear {
   0% {
-    opacity: .95;
-  }
-  50%{
-    opacity: .541;
+    opacity: 1;
   }
   100% {
     opacity: 0;

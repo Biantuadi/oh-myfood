@@ -93,7 +93,7 @@ li {
 */
 .loader {
   position: fixed;
-  background: rgba(255, 255, 255, 0.952);
+  background: white;
   height: 100vh;
   inset: 0;
   z-index: 1;
@@ -106,10 +106,7 @@ li {
 
 @keyframes disapear {
   0% {
-    opacity: 0.95;
-  }
-  50% {
-    opacity: 0.541;
+    opacity: 1;
   }
   100% {
     opacity: 0;
