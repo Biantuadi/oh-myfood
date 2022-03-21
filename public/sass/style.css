@@ -25,7 +25,7 @@ li {
   display: flex;
   align-items: center;
   height: 65px;
-  width: 280px;
+  width: 270px;
   box-shadow: 1px 2px 6px 0px rgba(171, 166, 166, 0.5);
   margin-bottom: 35px;
   border-radius: 30px;
@@ -370,8 +370,8 @@ li {
   align-items: center;
 }
 .section img {
-  width: 340px;
-  height: 170px;
+  width: 330px;
+  height: 150px;
   border-radius: 30px 30px 0 0;
   background-position: center;
   background-repeat: no-repeat;
