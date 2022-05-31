@@ -1,3 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700;800&family=Shrikhand&display=swap");
+* {
+  font-family: "Raleway", sans-serif;
+  box-sizing: border-box;
+  text-decoration: none;
+}
 
+body {
+  font-family: "Shrikhand", cursive;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: black;
+}
+
+li {
+  list-style: none;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+}
+
+header h1 {
+  font-family: "Shrikhand", sans-serif;
+  font-weight: 300;
+  text-align: center;
+}
+
+header .location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f7f7f7;
+  gap: 20px;
+}
 
 /*# sourceMappingURL=style.css.map */
