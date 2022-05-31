@@ -1,0 +1,26 @@
+{
+  "name": "p3_oh-myfood",
+  "version": "1.0.0",
+  "description": "![Ohmyfood](https://raw.githubusercontent.com/RachidBoubekeur-dev/Ohmyfood/master/images/logo/ohmyfood.png)",
+  "main": "index.js",
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  },
+  "scripts": {
+    "scss": "sass --watch scss/main.scss styles/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kevin-bbiant/beniBiantuadi_3_23022022.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kevin-bbiant/beniBiantuadi_3_23022022/issues"
+  },
+  "homepage": "https://github.com/kevin-bbiant/beniBiantuadi_3_23022022#readme",
+  "dependencies": {
+    "sass": "^1.52.1"
+  }
+}
