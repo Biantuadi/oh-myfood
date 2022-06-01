@@ -54,3 +54,8 @@ hearts.forEach((heart) => {
   });
 });
 
+window.addEventListener("load", () => {
+    let loader = document.querySelector(".loader");
+    loader.style.display = "none";
+})
+
