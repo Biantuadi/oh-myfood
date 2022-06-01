@@ -1,5 +1,39 @@
+@mixin flexDisplay ($direction :row) {
+    display: flex;
+    flex-direction: $direction;
+}
 @mixin flexCenter {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+@mixin size($width:100%, $height:100%) {
+    width: $width;
+    height: $height;
+}
+@mixin btn {
+    border-radius: 30px;
+    background: #9356DC;
+    background: linear-gradient(347deg,#9356DC 20%, #FF79DA 93%);
+    color: white;
+    box-shadow: 1px 2px 14px -4px #867e7e;
+    font-size: 1.1em;
+    transition: transform .4s ease-in-out;
+    border-radius: 27px;
+    font-size: 16px;
+    padding:15px 20px;
+    font-weight: bold;
+}
+@mixin btnHover {
+    transform: scale(1.05);
+    background: #9356DC;
+    background: linear-gradient(347deg, #9356DC 0%, #FF79DA 80%);
+    cursor: pointer;
+}
+
+@mixin backgroundImg($position: center, $repeat: no-repeat, $size: cover) {
+    // background-image: $image;
+    background-position: $position;
+    background-repeat: $repeat;
+    background-size: $size;
 }
