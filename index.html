@@ -17,6 +17,19 @@
 </head>
 
 <body>
+
+    <div class="loader">
+        <div class="loader__spinner">
+            <div class="loader__spinner__ball-container">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+
+
+
     <!-- headder -->
     <header>
         <h1>ohmyfood</h1>
@@ -29,7 +42,9 @@
     <section class="head__section">
         <p class="section_first">Réservez le menu qui vous convient</p>
         <p class="section_second">Découvrez des restaurants d'exeptions, séléctionés pas nos clients</p>
-        <button class="head__section__btn" id="btnExploire">Explorer nos restaurants</button>
+        <a href="#menu">
+            <button class="head__section__btn" id="btnExploire">Explorer nos restaurants</button>
+        </a>
     </section>
 
     <!-- end header && head section-->
@@ -38,7 +53,7 @@
 
     <ul class="guide">
         <h2>Fonctionnement</h2>
-        
+
         <li class="guide__first">
             <i class="fas fa-mobile-alt"></i>
             <p>Choisissez un restaurant</p>
@@ -58,24 +73,14 @@
     <!-- restaurants -->
     <section class="menu" id="menu">
         <h2>Restaurants</h2>
-        <div class="menu1">
-            <div class="menu__img">
-                <img src="./img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="">
-            </div>
+        <!-- <div class="menu__plat">
+            <a href="./product.html" class="menu__linkImg">
+                <img src="./img/restaurants/La note enchantée.jpg" alt="">
+            </a>
             <div class="menu__text">
                 <h3>Restaurant 1</h3>
                 <span>Lorem ipsum dolor sit amet </span>
-                <i class="fas fa-heart"></i>
-            </div>
-        </div>
-        <!-- <div class="menu1">
-            <div class="menu__img">
-                <img src="./img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="">
-            </div>
-            <div class="menu__text">
-                <h3>Restaurant 1</h3>
-                <span>Lorem ipsum dolor sit amet </span>
-                <i class="fas fa-heart"></i>
+                <i class="far fa-heart"></i>
             </div>
         </div> -->
     </section>
@@ -105,7 +110,7 @@
         </ul>
     </footer>
 
-
+    <script src="./js/index.js"></script>
 
 </body>
 

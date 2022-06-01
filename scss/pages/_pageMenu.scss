@@ -1,5 +1,46 @@
 @use "../utils/index.scss" as *;
-// @use  "../layout/footer.scss" as *;
+@use  "../layout/footer.scss" as *;
+
+
+.loader {
+    position: fixed;
+    height: 100vh;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.74);
+    inset: 0px;
+    animation: 0.4s ease 1.4s 1 normal forwards running disapear;
+    &__spinner {
+        width: 200px;
+        height: 200px;
+        display: inline-block;
+        overflow: hidden;
+        background: transparent;
+        :nth-child(1) {
+            background: rgb(147, 86, 220);
+            animation: 1s linear -0.5s infinite normal none running loader__spinner__ball-container;
+        }
+        :nth-child(2) {
+            background: rgb(255, 121, 218);
+            animation: 1s linear 0s infinite normal none running loader__spinner__ball-container;
+        }
+        :nth-child(3) {
+            background: rgb(147, 86, 220);
+            animation: 1s linear -0.5s infinite normal none running loader__spinner__ball-container-o;
+        }
+    }
+    &__ball-container {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        transform: translateZ(0px) scale(1);
+        backface-visibility: hidden;
+        transform-origin: 0px 0px;
+    }
+    
+}
 
 header{
     display: flex;
@@ -91,7 +132,7 @@ header .location{
         margin-top: 63px;
         margin-bottom: 30px;
     }
-    .menu1{
+    &__plat{
         @include flexCenter;
         @include flexDisplay(column);
         text-align: center;
@@ -103,28 +144,29 @@ header .location{
         margin-top: 20px;
         margin-bottom: 22px;
     }
-    &__img{
+    &__linkImg{
         img{
             border-radius: 30px 30px 0 0;
             @include size(345px,195px);
-            // @include backgroundImg;
+            @include backgroundImg;
         }
     }
     &__text{
         width: 100%;
-        margin:10px 0 0 -10px;
+        margin:10px 0 0 7px;
         position: relative;
+        text-align: start;
         h3{
-            margin:0 0 0 -168px;
+            margin:0;
         }
         span{
-            margin:0 0 0 -80px;
+            margin:0;
         }
         i{
             position: absolute;
-            right: -8px;
+            right: 15px;
             top: 5px;
-            font-size: 26px;
+            font-size: 25px;
         }
         i.fas{
             color: transparent;
@@ -132,7 +174,6 @@ header .location{
             background-clip: text;
             -webkit-background-clip: text;
             cursor: pointer;
-
         }
     }
 }

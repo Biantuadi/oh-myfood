@@ -26,6 +26,75 @@ li {
   list-style: none;
 }
 
+.footer {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0 50px 15px;
+  background-color: #323232;
+  color: #f7f7f7;
+}
+.footer h1 {
+  font-weight: 200;
+  font-family: "Shrikhand";
+  font-size: 22px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.footer a {
+  color: #e8e8e8;
+  font-size: 17px;
+}
+.footer__list {
+  display: flex;
+  flex-direction: column;
+  margin-left: -27px;
+}
+.footer__list__links {
+  margin-bottom: 20px;
+}
+.footer__list__links--modif {
+  margin-bottom: 0;
+}
+
+.loader {
+  position: fixed;
+  height: 100vh;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.74);
+  inset: 0px;
+  animation: 0.4s ease 1.4s 1 normal forwards running disapear;
+}
+.loader__spinner {
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  overflow: hidden;
+  background: transparent;
+}
+.loader__spinner :nth-child(1) {
+  background: rgb(147, 86, 220);
+  animation: 1s linear -0.5s infinite normal none running loader__spinner__ball-container;
+}
+.loader__spinner :nth-child(2) {
+  background: rgb(255, 121, 218);
+  animation: 1s linear 0s infinite normal none running loader__spinner__ball-container;
+}
+.loader__spinner :nth-child(3) {
+  background: rgb(147, 86, 220);
+  animation: 1s linear -0.5s infinite normal none running loader__spinner__ball-container-o;
+}
+.loader__ball-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform: translateZ(0px) scale(1);
+  backface-visibility: hidden;
+  transform-origin: 0px 0px;
+}
+
 header {
   display: flex;
   flex-direction: column;
@@ -136,7 +205,7 @@ header .location {
   margin-top: 63px;
   margin-bottom: 30px;
 }
-.menu .menu1 {
+.menu__plat {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -152,27 +221,33 @@ header .location {
   margin-top: 20px;
   margin-bottom: 22px;
 }
-.menu__img img {
+.menu__linkImg img {
   border-radius: 30px 30px 0 0;
   width: 345px;
   height: 195px;
+  background-image: "";
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
 }
 .menu__text {
   width: 100%;
-  margin: 10px 0 0 -10px;
+  margin: 10px 0 0 7px;
   position: relative;
+  text-align: start;
 }
 .menu__text h3 {
-  margin: 0 0 0 -168px;
+  margin: 0;
 }
 .menu__text span {
-  margin: 0 0 0 -80px;
+  margin: 0;
 }
 .menu__text i {
   position: absolute;
-  right: -8px;
+  right: 15px;
   top: 5px;
-  font-size: 26px;
+  font-size: 25px;
 }
 .menu__text i.fas {
   color: transparent;

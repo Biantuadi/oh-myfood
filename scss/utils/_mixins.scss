@@ -31,9 +31,10 @@
     cursor: pointer;
 }
 
-@mixin backgroundImg($position: center, $repeat: no-repeat, $size: cover) {
-    // background-image: $image;
+@mixin backgroundImg($image: "", $position: center, $repeat: no-repeat, $size: cover) {
+    background-image: $image;
     background-position: $position;
     background-repeat: $repeat;
     background-size: $size;
+    object-fit: $size;
 }
